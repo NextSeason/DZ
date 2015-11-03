@@ -53,8 +53,8 @@ module.exports = function( grunt ) {
             images : {
                 files : [ {
                     expand : true,
-                    flatten : true,
-                    src : [ 'src/**/*.png', 'src/**/*.gif', 'src/**/*.jpg' ],
+                    cwd : 'src/static/images',
+                    src : [ '**/*' ],
                     dest : '<%= dist %>/static/images/'
                 } ]
             },

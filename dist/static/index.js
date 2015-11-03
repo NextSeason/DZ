@@ -1,5 +1,5 @@
 ( function() {
-
+    /*
     function onorientationchange() {
         var orientation = window.orientation;
         if ( orientation === 180 || orientation === 0) { 
@@ -12,12 +12,12 @@
     }
     $( window ).on( "onorientationchange" in window ? "orientationchange" : "resize", onorientationchange ); 
     $().ready( onorientationchange );
-
+    */
 
     var PreloadImages = ( function() {
         var _pool = {},
             success = 1,
-            error = 0;
+            fail = 0;
         
         _pool.length = 0;
 
@@ -25,7 +25,11 @@
             var i = 0,
                 l = list.length;
             for( ; i < l; i += 1 ) {
-
+                if( list[ i ] == needle ) {
+                    list.splice( i, 1 );
+                    i--; 
+                    l--;
+                }
             }
         };
 
@@ -38,14 +42,14 @@
                         loaded : [],
                         loading : [],
                         error : [],
-                        list : list,
+                        list : params.list,
                         time : 0
                     },
                     start = new Date,
                     callback = params.callback || function(){};
                 
                 for( ; i < l; i += 1 ) {
-                    src = list[ i ];
+                    src = params.list[ i ];
 
                     if( _pool[ src ] === undefined ) {
                         _pool[ src ] = {
@@ -55,15 +59,20 @@
 
                         $( _pool[ src ].elem ).on( 'load', function() {
                             _pool[ src ].state = 'loaded';
+                            removeFromList( src, pool.loading );
                             pool.loaded.push( src );
+                            pool.time = new Date - start;
+                            callback( success, pool );
                         } );
 
                         $( _pool[ src ].elem ).on( 'error', function() {
                             _pool[ src ].state = 'error';
+                            removeFromList( src, pool.loading );
                             pool.error.push( src );
+                            callback( fail, pool );
                         } );
 
-                        _pool[ src ].elem = src;
+                        _pool[ src ].elem.src = src;
                         _pool[ src ].state = 'loading';
                         pool.loading.push( src )
 
@@ -72,10 +81,22 @@
                         pool.time = new Date - start;
                         callback( success, pool );
                     } else if( _pool[ src ].state === 'loading' ) {
+                        pool.loading.push( src );
+                        $( _pool[ src ].elem ).on( 'load', function() {
+                            removeFromList( src, pool.loading );
+                            pool.loaded.push( src );
+                            pool.time = new Date - start;
+                            callback( success, pool );
+                        } );
+
+                        $( _pool[ src ].elem ).on( 'error', function() {
+                            removeFromList( src, pool.loading );
+                            pool.error.push( src );
+                            callback( fail, pool );
+                        } );
                     }
                 }
             }
         }
     } )();
-
 } )();
