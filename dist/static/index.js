@@ -99,4 +99,14 @@
             }
         }
     } )();
+
+    $( 'a.menubutton' ).on( 'click', function( e ) {
+        e.preventDefault();
+        $( 'ul.menu' ).css( 'right', 0 );
+    } );
+
+    $( 'ul.menu .hide' ).on( 'click', function( e ) {
+        e.preventDefault();
+        $( 'ul.menu' ).css( 'right', '-100px' );
+    } );
 } )();

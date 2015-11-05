@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="user-scalable=no,width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title></title>
         <link rel="stylesheet" href="@@path.css/index.css" />
@@ -12,28 +12,31 @@
             <div class="rotation"></div>
         </div>
         <div id="is-landscape" class="landscape">
-            <div class="pages tuan">
+            <div class="pages tuan2">
                 <div class="top">
-                    <a href="###" class="bac"></a>
+                    <a href="@@host/tuan.html" class="bac"></a>
                     <a href="###" class="menubutton"></a>
                     <div class="pagetitle"></div>
                 </div>
                 <div class="title"></div>
-                <div class="detail-button-box">
-                    <b class="arrows arrow-left"></b>
-                    <b class="arrows arrow-right"></b>
-                    <div class="button"></div>
-                </div>
+                <div class="tip"></div>
                 <ul class="menu">
                     <li><a href="###">车展主页</a></li>
                     <li><a href="###">车型列表</a></li>
                     <li><a href="###">车展直播间</a></li>
                     <li><a href="###">亲身体验车展</a></li>
-                    <li><a href="###">收起 <img src="@@path.images/gtgt.png" width="10" height="9" /></a></li>
+                    <li><a href="###" class="hide">收起 <img src="@@path.images/gtgt.png" width="10" height="9" /></a></li>
                 </ul>
+                <div class="bottom-line clearfix">
+                    <div class="scroll-bar bg-contain">
+                        <div class="scroll-btn bg-contain"></div>
+                    </div>
+                    <a href="@@host/tuan3.html" class="next bg-contain"></a>
+                </div>
             </div>
         </div>
         <script src="@@path.js/zepto.min.js"></script>
         <script src="@@path.js/index.js"></script>
+        <script></script>
     </body>
 </html>

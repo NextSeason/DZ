@@ -16,6 +16,13 @@ html, body {
     }
 }
 
+.bg-contain {
+    background-repeat : no-repeat;
+    background-position : center;
+    -webkit-background-size : contain;
+    background-size : contain;
+}
+
 #is-portrait {
     background : #000;
     height : 100%; 
@@ -55,6 +62,7 @@ html, body {
         padding-top : 0.1px; 
         background-repeat : no-repeat;
         background-position : center;
+        overflow : hidden;
 
         .top {
             height : 33px;
@@ -86,14 +94,16 @@ html, body {
             }
         }
         ul.menu {
-            display : none;
             position : absolute;
+            z-index : 1000;
             background : rgba( 0, 0, 0, .7 );
             width : 100px; 
             height : 100%;
             top : 0;
-            right : 0;
+            right : -100px;
             bottom : 0;
+            -webkit-transition : right .3s ease-in-out;
+            transition : right .3s ease-in-out;
             li {
                 height : 20%;
                 border-bottom : solid 1px #414141;
@@ -156,6 +166,7 @@ html, body {
                     }
                 }
                 .button {
+                    display : block;
                     width : 142px;
                     height : 37px;
                     margin : 0 auto;
@@ -280,6 +291,7 @@ html, body {
                     }
                 }
                 .button {
+                    display : block;
                     width : 120px;
                     height : 55px;
                     margin : 0 auto;
@@ -288,6 +300,59 @@ html, body {
                     background-size : contain;
                 }
 
+            }
+        }
+        &.tuan2 {
+            background-image : url( @@path.images/tuan/04-1.jpg );
+            .pagetitle {
+                width : 110px;
+                background-image : url( @@path.images/tuan/carword.png );
+            }
+            .tip {
+                width : 152px;
+                height : 37px;
+                margin : 15px 0 0 30px;
+                background-image : url( @@path.images/tuan/04tip.png );
+                -webkit-background-size : contain;
+                background-size : contain;
+            }
+            .bottom-line {
+                position : fixed;
+                bottom : 20px;
+                left : 110px;
+                .scroll-bar {
+                    width : 340px;
+                    height : 11px;
+                    font-size : 0;
+                    position : relative;
+                    float : left;
+                    background-image : url( @@path.images/tuan/04line.png );
+                    .scroll-btn {
+                        width : 53px;
+                        height : 53px;
+                        font-size : 0;
+                        position : absolute;
+                        background-image : url( @@path.images/tuan/04button.png );
+                        top : -21px;
+                        left : -21px;
+                    }
+                }
+                .next {
+                    width : 57px;
+                    height : 30px;
+                    display : block;
+                    margin : -9px 0 0 30px;
+                    float : right;
+                    background-image : url( @@path.images/tuan/next.png );
+                }
+            }
+        }
+
+        &.tuan3 {
+            background-image : url( @@path.images/tuan/05bg.jpg );
+            .pagetitle {
+                width : 110px;
+                background-image : url( @@path.images/tuan/carword.png );
             }
         }
     }

@@ -80,6 +80,14 @@ html, body {
 }
 
 /* line 19, ../../src/static/index.scss */
+.bg-contain {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+/* line 26, ../../src/static/index.scss */
 #is-portrait {
   background: #000;
   height: 100%;
@@ -94,21 +102,21 @@ html, body {
   box-align: center;
   display: none;
 }
-/* line 35, ../../src/static/index.scss */
+/* line 42, ../../src/static/index.scss */
 #is-portrait .rotation {
   width: 300px;
   height: 265px;
-  background: url(http://192.168.2.120:8080/DZ/dist/static/images/rotation.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/rotation.png);
   -webkit-background-size: cover;
   background-size: cover;
 }
 
-/* line 45, ../../src/static/index.scss */
+/* line 52, ../../src/static/index.scss */
 #is-landscape {
   height: 100%;
   width: 100%;
 }
-/* line 48, ../../src/static/index.scss */
+/* line 55, ../../src/static/index.scss */
 #is-landscape .pages {
   /* home page style */
   width: 100%;
@@ -119,60 +127,63 @@ html, body {
   padding-top: 0.1px;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
   /* home page style */
 }
-/* line 59, ../../src/static/index.scss */
+/* line 67, ../../src/static/index.scss */
 #is-landscape .pages .top {
   height: 33px;
   background: rgba(0, 0, 0, 0.3);
   position: relative;
 }
-/* line 63, ../../src/static/index.scss */
+/* line 71, ../../src/static/index.scss */
 #is-landscape .pages .top a.bac {
   display: block;
   width: 55px;
   height: 33px;
   position: absolute;
   left: 30px;
-  background: url(http://192.168.2.120:8080/DZ/dist/static/images/bac.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/bac.png);
   background-size: contain;
 }
-/* line 72, ../../src/static/index.scss */
+/* line 80, ../../src/static/index.scss */
 #is-landscape .pages .top a.menubutton {
   display: block;
   width: 33px;
   height: 33px;
   position: absolute;
   right: 30px;
-  background: url(http://192.168.2.120:8080/DZ/dist/static/images/menubutton.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/menubutton.png);
   background-size: contain;
 }
-/* line 81, ../../src/static/index.scss */
+/* line 89, ../../src/static/index.scss */
 #is-landscape .pages .top .pagetitle {
   width: 100px;
   height: 33px;
   margin: 0 auto;
   background-size: contain;
 }
-/* line 88, ../../src/static/index.scss */
+/* line 96, ../../src/static/index.scss */
 #is-landscape .pages ul.menu {
-  display: none;
   position: absolute;
+  z-index: 1000;
   background: rgba(0, 0, 0, 0.7);
   width: 100px;
   height: 100%;
   top: 0;
-  right: 0;
+  right: -100px;
   bottom: 0;
+  -webkit-transition: right .3s ease-in-out;
+  transition: right .3s ease-in-out;
 }
-/* line 97, ../../src/static/index.scss */
+/* line 107, ../../src/static/index.scss */
 #is-landscape .pages ul.menu li {
   height: 20%;
   border-bottom: solid 1px #414141;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 102, ../../src/static/index.scss */
+/* line 112, ../../src/static/index.scss */
 #is-landscape .pages ul.menu li a {
   color: #FFF;
   display: box;
@@ -191,27 +202,27 @@ html, body {
   -webkit-box-align: center;
   box-align: center;
 }
-/* line 125, ../../src/static/index.scss */
+/* line 135, ../../src/static/index.scss */
 #is-landscape .pages.cover {
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/01bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/01bg.jpg);
 }
-/* line 127, ../../src/static/index.scss */
+/* line 137, ../../src/static/index.scss */
 #is-landscape .pages.cover .title {
   width: 285px;
   height: 125px;
   margin: 6% auto 0;
-  background: url(http://192.168.2.120:8080/DZ/dist/static/images/01title.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/01title.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 136, ../../src/static/index.scss */
+/* line 146, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box {
   width: 195px;
   height: 37px;
   margin: 13% auto 0;
   position: relative;
 }
-/* line 141, ../../src/static/index.scss */
+/* line 151, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .arrows {
   width: 13px;
   height: 13px;
@@ -221,67 +232,68 @@ html, body {
   position: absolute;
   top: 12px;
 }
-/* line 149, ../../src/static/index.scss */
+/* line 159, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .arrows.arrow-left {
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/tipL.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipL.png);
   left: 7px;
 }
-/* line 153, ../../src/static/index.scss */
+/* line 163, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .arrows.arrow-right {
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/tipR.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipR.png);
   right: 7px;
 }
-/* line 158, ../../src/static/index.scss */
+/* line 168, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .button {
+  display: block;
   width: 142px;
   height: 37px;
   margin: 0 auto;
-  background: url(http://192.168.2.120:8080/DZ/dist/static/images/01button.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/01button.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 167, ../../src/static/index.scss */
+/* line 178, ../../src/static/index.scss */
 #is-landscape .pages.cover .bottom-line {
   position: absolute;
   bottom: 10px;
   height: 30px;
   width: 100%;
 }
-/* line 172, ../../src/static/index.scss */
+/* line 183, ../../src/static/index.scss */
 #is-landscape .pages.cover .bottom-line .logo {
   width: 100px;
   height: 30px;
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/logo.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/logo.png);
   -webkit-background-size: contain;
   background-size: contain;
   position: absolute;
   left: 30px;
 }
-/* line 181, ../../src/static/index.scss */
+/* line 192, ../../src/static/index.scss */
 #is-landscape .pages.cover .bottom-line .bac2home {
   width: 75px;
   height: 30px;
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/bac2home.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/bac2home.png);
   -webkit-background-size: contain;
   background-size: contain;
   position: absolute;
   right: 30px;
 }
-/* line 194, ../../src/static/index.scss */
+/* line 205, ../../src/static/index.scss */
 #is-landscape .pages.list {
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/02bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/02bg.jpg);
 }
-/* line 196, ../../src/static/index.scss */
+/* line 207, ../../src/static/index.scss */
 #is-landscape .pages.list .pagetitle {
   width: 75px;
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/word.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/word.png);
 }
-/* line 202, ../../src/static/index.scss */
+/* line 213, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area ul li {
   float: left;
   margin: 15px 0 0 14px;
 }
-/* line 205, ../../src/static/index.scss */
+/* line 216, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area ul li a.car-image {
   display: block;
   width: 125px;
@@ -290,18 +302,18 @@ html, body {
   background-size: contain;
   background-position: center;
 }
-/* line 216, ../../src/static/index.scss */
+/* line 227, ../../src/static/index.scss */
 #is-landscape .pages.list .scroll-bar {
   width: 202px;
   height: 4px;
   font-size: 0;
   margin: 10px auto 0;
   position: relative;
-  background: url(http://192.168.2.120:8080/DZ/dist/static/images/tipbg.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipbg.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 225, ../../src/static/index.scss */
+/* line 236, ../../src/static/index.scss */
 #is-landscape .pages.list .scroll-bar .tiplight {
   display: block;
   width: 43px;
@@ -309,45 +321,45 @@ html, body {
   position: absolute;
   top: 0;
   font-size: 0;
-  background: url(http://192.168.2.120:8080/DZ/dist/static/images/tiplight.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tiplight.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 237, ../../src/static/index.scss */
+/* line 248, ../../src/static/index.scss */
 #is-landscape .pages.list .scroll-tip {
   width: 95px;
   height: 10px;
   margin: 10px auto 0;
-  background: url(http://192.168.2.120:8080/DZ/dist/static/images/tipword.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipword.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 246, ../../src/static/index.scss */
+/* line 257, ../../src/static/index.scss */
 #is-landscape .pages.tuan {
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/tuan/03bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/03bg.jpg);
 }
-/* line 248, ../../src/static/index.scss */
+/* line 259, ../../src/static/index.scss */
 #is-landscape .pages.tuan .pagetitle {
   width: 110px;
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/tuan/carword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
 }
-/* line 252, ../../src/static/index.scss */
+/* line 263, ../../src/static/index.scss */
 #is-landscape .pages.tuan .title {
   width: 200px;
   height: 140px;
   margin-left: 30px;
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/tuan/03title.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/03title.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 260, ../../src/static/index.scss */
+/* line 271, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box {
   width: 160px;
   height: 55px;
   position: relative;
   margin: 42px 0 0 36px;
 }
-/* line 265, ../../src/static/index.scss */
+/* line 276, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .arrows {
   width: 8px;
   height: 8px;
@@ -357,24 +369,86 @@ html, body {
   position: absolute;
   top: 24px;
 }
-/* line 273, ../../src/static/index.scss */
+/* line 284, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .arrows.arrow-left {
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/tipL-orange.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipL-orange.png);
   left: 7px;
 }
-/* line 277, ../../src/static/index.scss */
+/* line 288, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .arrows.arrow-right {
-  background-image: url(http://192.168.2.120:8080/DZ/dist/static/images/tipR-orange.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipR-orange.png);
   right: 7px;
 }
-/* line 282, ../../src/static/index.scss */
+/* line 293, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .button {
+  display: block;
   width: 120px;
   height: 55px;
   margin: 0 auto;
-  background: url(http://192.168.2.120:8080/DZ/dist/static/images/360button.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/360button.png);
   -webkit-background-size: contain;
   background-size: contain;
+}
+/* line 305, ../../src/static/index.scss */
+#is-landscape .pages.tuan2 {
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04-1.jpg);
+}
+/* line 307, ../../src/static/index.scss */
+#is-landscape .pages.tuan2 .pagetitle {
+  width: 110px;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
+}
+/* line 311, ../../src/static/index.scss */
+#is-landscape .pages.tuan2 .tip {
+  width: 152px;
+  height: 37px;
+  margin: 15px 0 0 30px;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04tip.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+/* line 319, ../../src/static/index.scss */
+#is-landscape .pages.tuan2 .bottom-line {
+  position: fixed;
+  bottom: 20px;
+  left: 110px;
+}
+/* line 323, ../../src/static/index.scss */
+#is-landscape .pages.tuan2 .bottom-line .scroll-bar {
+  width: 340px;
+  height: 11px;
+  font-size: 0;
+  position: relative;
+  float: left;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04line.png);
+}
+/* line 330, ../../src/static/index.scss */
+#is-landscape .pages.tuan2 .bottom-line .scroll-bar .scroll-btn {
+  width: 53px;
+  height: 53px;
+  font-size: 0;
+  position: absolute;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04button.png);
+  top: -21px;
+  left: -21px;
+}
+/* line 340, ../../src/static/index.scss */
+#is-landscape .pages.tuan2 .bottom-line .next {
+  width: 57px;
+  height: 30px;
+  display: block;
+  margin: -9px 0 0 30px;
+  float: right;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/next.png);
+}
+/* line 351, ../../src/static/index.scss */
+#is-landscape .pages.tuan3 {
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/05bg.jpg);
+}
+/* line 353, ../../src/static/index.scss */
+#is-landscape .pages.tuan3 .pagetitle {
+  width: 110px;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
 }
 
 /*
