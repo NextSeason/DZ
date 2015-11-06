@@ -52,6 +52,24 @@ html, body {
 #is-landscape {
     height : 100%;
     width : 100%;
+    #loading {
+        width : 100%;
+        height : 100%;
+        display : -webkit-box;
+        display : box;
+
+        -webkit-box-orient : horizontal;
+        box-orient : horizontal;
+
+        -webkit-box-pack : center;
+        box-pack : center;
+
+        -webkit-box-align : center;
+        box-align : center;
+        text-align : center;
+        color : #FFF;
+        background : #000;
+    }
     .pages {
         /* home page style */
         width : 100%;
@@ -63,11 +81,20 @@ html, body {
         background-repeat : no-repeat;
         background-position : center;
         overflow : hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+          
+        -webkit-perspective: 1000;
+        perspective: 1000;
 
         .top {
+            width : 100%;
             height : 33px;
             background : rgba( 0, 0, 0, .3 );
-            position : relative;
+            position : fixed;
+            top : 0;
+            left : 0;
+            z-index : 1000;
             a.bac {
                 display : block;
                 width : 55px;
@@ -95,7 +122,7 @@ html, body {
         }
         ul.menu {
             position : absolute;
-            z-index : 1000;
+            z-index : 2000;
             background : rgba( 0, 0, 0, .7 );
             width : 100px; 
             height : 100%;
@@ -132,6 +159,16 @@ html, body {
                 }
             }
         }
+        .next {
+            width : 57px;
+            height : 30px;
+            display : block;
+            position : absolute;
+            right : 25px;
+            bottom : 14px;
+            background-image : url( @@path.images/tuan/next.png );
+        }
+
         &.cover {
             background-image : url( @@path.images/01bg.jpg );
             .title {
@@ -141,6 +178,16 @@ html, body {
                 background : url( @@path.images/01title.png );
                 -webkit-background-size : contain;
                 background-size : contain;
+                -webkit-transform : scale( 0 );
+                transform : scale( 0 );
+                opacity : 0;
+                -webkit-transition : all 1s ease-in-out;
+                transition : all 1s ease-in-out;
+                &.show {
+                    -webkit-transform : scale( 1 );
+                    transform : scale( 1 );
+                    opacity : 1;
+                }
             }
 
             .button-box {
@@ -156,13 +203,24 @@ html, body {
                     display : block;
                     position : absolute;
                     top : 12px;
+                    opacity : 0;
+                    -webkit-animation-duration: 4s;
+                    -webkit-animation-timing-function: ease;
+                    -webkit-animation-delay: 0;
+                    -webkit-animation-iteration-count: infinite;
+                    -webkit-backface-visibility: hidden;
+                    &.show {
+                        opacity : 1;
+                    }
                     &.arrow-left {
                         background-image : url( @@path.images/tipL.png );
                         left : 7px;
+                        -webkit-animation-name: 'shakeleft';
                     }
                     &.arrow-right {
                         background-image : url( @@path.images/tipR.png );
                         right : 7px;
+                        -webkit-animation-name: 'shakeright';
                     }
                 }
                 .button {
@@ -173,6 +231,12 @@ html, body {
                     background : url( @@path.images/01button.png );
                     -webkit-background-size : contain;
                     background-size : contain;
+                    opacity : 0;
+                    -webkit-transition : opacity 1s ease-in-out;
+                    transition : opacity 1s ease-in-out;
+                    &.show {
+                        opacity : 1;
+                    }
                 }
             }
             .bottom-line {
@@ -188,6 +252,14 @@ html, body {
                     background-size : contain;
                     position : absolute;
                     left : 30px;
+                    -webkit-transform : scale( 0 );
+                    transform : scale( 0 );
+                    -webkit-transition : all 1s ease-in-out;
+                    transition : all 1s ease-in-out;
+                    &.show {
+                        -webkit-transform : scale( 1 );
+                        transform : scale( 1 );
+                    }
                 }
                 .bac2home {
                     width : 75px;
@@ -197,19 +269,40 @@ html, body {
                     background-size : contain;
                     position : absolute;
                     right : 30px;
-
+                    display : block;
+                    -webkit-transform : scale( 0 );
+                    transform : scale( 0 );
+                    -webkit-transition : all 1s ease-in-out;
+                    transition : all 1s ease-in-out;
+                    &.show {
+                        -webkit-transform : scale( 1 );
+                        transform : scale( 1 );
+                    }
                 }
             }
         }
         /* home page style */
         &.list {
-            background-image : url( @@path.images/02bg.jpg );            
+            background-image : url( @@path.images/list/02bg.jpg );            
             .pagetitle {
                 width : 75px;
                 background-image : url( @@path.images/word.png );
             }
             .car-list-area {
+                margin-top :  35px;
+                width : 100%;
+                overflow : hidden;
+                .inner {
+                    width : 300%;
+                    -webkit-transition : all .6s ease-in-out;
+                    transition : all .6s ease-in-out;
+                }
+                .list-page {
+                    float : left;
+                }
                 ul {
+                    width : 568px;
+                    margin : 0 auto;
                     li {
                         float : left;
                         margin : 15px 0 0 14px;
@@ -239,10 +332,13 @@ html, body {
                     height : 4px;
                     position : absolute;
                     top : 0;
+                    left : 0;
                     font-size : 0;
                     background : url( @@path.images/tiplight.png );
                     -webkit-background-size : contain;
                     background-size : contain;
+                    -webkit-transition : left 1s ease-in-out;
+                    transition : left 1s ease-in-out;
                 }
             }
             .scroll-tip {
@@ -256,6 +352,16 @@ html, body {
         }
         &.tuan {
             background-image : url( @@path.images/tuan/03bg.jpg );
+            -webkit-transform : scale( 1.5 );
+            transform : scale( 1.5 );
+            opacity : 0;
+            -webkit-transition : all 1s ease-in-out;
+            transition : all 1s ease-in-out;
+            &.show {
+                -webkit-transform : scale( 1 );
+                transform : scale( 1 );
+                opacity : 1;
+            }
             .pagetitle {
                 width : 110px;
                 background-image : url( @@path.images/tuan/carword.png );
@@ -263,7 +369,7 @@ html, body {
             .title {
                 width : 200px;
                 height : 140px;
-                margin-left : 30px;
+                margin : 35px 0 0 30px;
                 background-image : url( @@path.images/tuan/03title.png );
                 -webkit-background-size : contain;
                 background-size : contain;
@@ -303,7 +409,8 @@ html, body {
             }
         }
         &.tuan2 {
-            background-image : url( @@path.images/tuan/04-1.jpg );
+            display : none;
+            /* background-image : url( @@path.images/tuan/04-1.jpg ); */
             .pagetitle {
                 width : 110px;
                 background-image : url( @@path.images/tuan/carword.png );
@@ -311,39 +418,38 @@ html, body {
             .tip {
                 width : 152px;
                 height : 37px;
-                margin : 15px 0 0 30px;
+                margin : 50px 0 0 30px;
                 background-image : url( @@path.images/tuan/04tip.png );
                 -webkit-background-size : contain;
                 background-size : contain;
             }
-            .bottom-line {
+            .slices-box {
+                width : 100%;
+                height : 100%;
+                div {
+                    width : 100%;
+                    height : 100%;
+                    background-position : center;
+                    -webkit-background-size : cover;
+                    background-size : cover;
+                }
+            }
+            .scroll-bar {
+                width : 340px;
+                height : 11px;
+                font-size : 0;
                 position : fixed;
+                background-image : url( @@path.images/tuan/04line.png );
                 bottom : 20px;
                 left : 110px;
-                .scroll-bar {
-                    width : 340px;
-                    height : 11px;
+                .scroll-btn {
+                    width : 53px;
+                    height : 53px;
                     font-size : 0;
-                    position : relative;
-                    float : left;
-                    background-image : url( @@path.images/tuan/04line.png );
-                    .scroll-btn {
-                        width : 53px;
-                        height : 53px;
-                        font-size : 0;
-                        position : absolute;
-                        background-image : url( @@path.images/tuan/04button.png );
-                        top : -21px;
-                        left : -21px;
-                    }
-                }
-                .next {
-                    width : 57px;
-                    height : 30px;
-                    display : block;
-                    margin : -9px 0 0 30px;
-                    float : right;
-                    background-image : url( @@path.images/tuan/next.png );
+                    position : absolute;
+                    background-image : url( @@path.images/tuan/04button.png );
+                    top : -21px;
+                    left : -21px;
                 }
             }
         }
@@ -354,7 +460,358 @@ html, body {
                 width : 110px;
                 background-image : url( @@path.images/tuan/carword.png );
             }
+            .img-list-area {
+                margin : 40px auto 0;
+                ul {
+                    width : 480px;
+                    margin : 0 auto;
+                    li {
+                        float : left;
+                        margin : 1px 0 0 1px;
+                        a.car-image {
+                            display : block;
+                            width : 118px;
+                            height : 100px;
+                            -webkit-background-size : cover;
+                            background-size : cover;
+                            background-position : center;
+                            background-repeat : no-repeat;
+                        }
+                    }
+                }
+            }
+            .tip {
+                width : 123px;
+                height : 22px;
+                background-image : url( @@path.images/tuan/05tip.png );
+                margin : 10px auto;
+            }
         }
+        &.tuan4 {
+            background : #000;
+        }
+        &.exp-cover {
+            background-image : url( @@path.images/exp-01bg.jpg );
+            .title {
+                width : 345px;
+                height : 108px;
+                margin : 8% auto 0;
+                background : url( @@path.images/exp-01title.png );
+                -webkit-background-size : contain;
+                background-size : contain;
+                -webkit-transform : scale( 0 );
+                transform : scale( 0 );
+                opacity : 0;
+                -webkit-transition : all 1s ease-in-out;
+                transition : all 1s ease-in-out;
+                &.show {
+                    -webkit-transform : scale( 1 );
+                    transform : scale( 1 );
+                    opacity : 1;
+                }
+            }
+
+            .button-box {
+                width : 195px;
+                height : 37px;
+                margin : 13% auto 0; 
+                position : relative;
+                .arrows {
+                    width : 13px;
+                    height : 13px;
+                    -webkit-background-size : contain;
+                    background-size : contain;
+                    display : block;
+                    position : absolute;
+                    top : 12px;
+                    opacity : 0;
+                    -webkit-animation-duration: 4s;
+                    -webkit-animation-timing-function: ease;
+                    -webkit-animation-delay: 0;
+                    -webkit-animation-iteration-count: infinite;
+                    -webkit-backface-visibility: hidden;
+                    &.show {
+                        opacity : 1;
+                    }
+                    &.arrow-left {
+                        background-image : url( @@path.images/tipL.png );
+                        left : 7px;
+                        -webkit-animation-name: 'shakeleft';
+                    }
+                    &.arrow-right {
+                        background-image : url( @@path.images/tipR.png );
+                        right : 7px;
+                        -webkit-animation-name: 'shakeright';
+                    }
+                }
+                .button {
+                    display : block;
+                    width : 142px;
+                    height : 37px;
+                    margin : 0 auto;
+                    background : url( @@path.images/exp-01button.png );
+                    -webkit-background-size : contain;
+                    background-size : contain;
+                    opacity : 0;
+                    -webkit-transition : opacity 1s ease-in-out;
+                    transition : opacity 1s ease-in-out;
+                    &.show {
+                        opacity : 1;
+                    }
+                }
+            }
+            .bottom-line {
+                position : absolute;
+                bottom : 10px;
+                height : 30px;
+                width : 100%;
+                .logo {
+                    width : 100px;
+                    height : 30px;
+                    background-image : url( @@path.images/logo.png );
+                    -webkit-background-size : contain;
+                    background-size : contain;
+                    position : absolute;
+                    left : 30px;
+                    -webkit-transform : scale( 0 );
+                    transform : scale( 0 );
+                    -webkit-transition : all 1s ease-in-out;
+                    transition : all 1s ease-in-out;
+                    &.show {
+                        -webkit-transform : scale( 1 );
+                        transform : scale( 1 );
+                    }
+                }
+                .bac2home {
+                    width : 75px;
+                    height : 30px;
+                    background-image : url( @@path.images/bac2home.png );
+                    -webkit-background-size : contain;
+                    background-size : contain;
+                    position : absolute;
+                    right : 30px;
+                    display : block;
+                    -webkit-transform : scale( 0 );
+                    transform : scale( 0 );
+                    -webkit-transition : all 1s ease-in-out;
+                    transition : all 1s ease-in-out;
+                    &.show {
+                        -webkit-transform : scale( 1 );
+                        transform : scale( 1 );
+                    }
+                }
+            }
+        }
+        &.exp-list {
+            background-image : url( @@path.images/exp-bg.jpg );            
+            .pagetitle {
+                width : 75px;
+                background-image : url( @@path.images/exp-list/02titleword.png );
+            }
+            .car-list-area {
+                margin-top : 5%;
+                margin-left : 30px;
+                width : 100%;
+                overflow : hidden;
+                .inner {
+                    width : 300%;
+                    -webkit-transition : all .6s ease-in-out;
+                    transition : all .6s ease-in-out;
+                }
+                .list-page {
+                    float : left;
+                }
+                ul {
+                    li {
+                        float : left;
+                        margin : 15px 0 0;
+                        a.car-image {
+                            display : block;
+                            width : 165px;
+                            height : 205px;
+                            -webkit-background-size : contain;
+                            background-size : contain;
+                            background-position : center;
+                        }
+                    }
+                }
+            }
+            .scroll-bar {
+                width : 202px;
+                height : 4px;
+                font-size : 0;
+                margin : 10px auto 0;
+                position : relative;
+                background : url( @@path.images/tipbg.png );
+                -webkit-background-size : contain;
+                background-size : contain;
+                .tiplight {
+                    display : block;
+                    width : 43px;
+                    height : 4px;
+                    position : absolute;
+                    top : 0;
+                    left : 0;
+                    font-size : 0;
+                    background : url( @@path.images/tiplight.png );
+                    -webkit-background-size : contain;
+                    background-size : contain;
+                    -webkit-transition : left 1s ease-in-out;
+                    transition : left 1s ease-in-out;
+                }
+            }
+            .scroll-tip {
+                width : 180px;
+                height : 10px;
+                margin : 10px auto 0;
+                background : url( @@path.images/exp-list/02tipword.png );
+                -webkit-background-size : contain;
+                background-size : contain;
+            }
+        }
+
+        &.exp-cars {
+            background-image : url( @@path.images/exp-bg.jpg );            
+            .pagetitle {
+                width : 70px;
+                background-image : url( @@path.images/exp-cars/04titleword.png );
+            }
+            .car-list-area {
+                margin-top :  35px;
+                width : 100%;
+                overflow : hidden;
+                .inner {
+                    width : 300%;
+                    -webkit-transition : all .6s ease-in-out;
+                    transition : all .6s ease-in-out;
+                }
+                .list-page {
+                    float : left;
+                }
+                ul {
+                    width : 568px;
+                    margin : 0 auto;
+                    li {
+                        float : left;
+                        margin : 15px 0 0 14px;
+                        a.car-image {
+                            display : block;
+                            width : 125px;
+                            height : 100px;
+                            -webkit-background-size : contain;
+                            background-size : contain;
+                            background-position : center;
+                        }
+                    }
+                }
+            }
+            .scroll-bar {
+                width : 202px;
+                height : 4px;
+                font-size : 0;
+                margin : 10px auto 0;
+                position : relative;
+                background : url( @@path.images/tipbg.png );
+                -webkit-background-size : contain;
+                background-size : contain;
+                .tiplight {
+                    display : block;
+                    width : 43px;
+                    height : 4px;
+                    position : absolute;
+                    top : 0;
+                    left : 0;
+                    font-size : 0;
+                    background : url( @@path.images/tiplight.png );
+                    -webkit-background-size : contain;
+                    background-size : contain;
+                    -webkit-transition : left 1s ease-in-out;
+                    transition : left 1s ease-in-out;
+                }
+            }
+            .scroll-tip {
+                width : 115px;
+                height : 10px;
+                margin : 10px auto 0;
+                background : url( @@path.images/exp-cars/04tipword.png );
+                -webkit-background-size : contain;
+                background-size : contain;
+            }
+        }
+        &.exp-booth {
+            background-image : url( @@path.images/exp-bg.jpg );            
+            .pagetitle {
+                width : 90px;
+                background-image : url( @@path.images/exp-booth/03titleword.png );
+            }
+            .booth-nav {
+                position : absolute;
+                top : 30px;
+                bottom : 0;
+                display : -webkit-box;
+                display : box;
+
+                -webkit-box-orient : horizontal;
+                box-orient : horizontal;
+
+                -webkit-box-pack : center;
+                box-pack : center;
+
+                -webkit-box-align : center;
+                box-align : center;
+
+                a {
+                    display : block;
+                    width : 66px;
+                    height : 33px;
+                    background-repeat : no-repeat;
+                    background-position : center;
+                    -webkit-background-size : contain;
+                    background-size : contain;
+                }
+                &.nav-left {
+                    left : 0;
+                }
+                &.nav-right {
+                    right : 0;
+                }
+            }
+        }
+
+
+    }
+}
+
+@-webkit-keyframes shakeleft {
+    0%, 50%, 100% {
+        left : 0;
+    }
+    25%, 75% {
+        left : 7px;
+    }
+}
+@keyframes shakeleft {
+    0%, 50%, 100% {
+        left : 0;
+    }
+    25%, 75% {
+        left : 7px;
+    }
+}
+@-webkit-keyframes shakeright {
+    0%, 50%, 100% {
+        right : 0;
+    }
+    25%, 75% {
+        right : 7px;
+    }
+}
+@keyframes shakeright {
+    0%, 50%, 100% {
+        right : 0;
+    }
+    25%, 75% {
+        right : 7px;
     }
 }
 /*

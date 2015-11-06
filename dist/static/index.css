@@ -117,6 +117,22 @@ html, body {
   width: 100%;
 }
 /* line 55, ../../src/static/index.scss */
+#is-landscape #loading {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-box-align: center;
+  box-align: center;
+  text-align: center;
+  color: #FFF;
+  background: #000;
+}
+/* line 73, ../../src/static/index.scss */
 #is-landscape .pages {
   /* home page style */
   width: 100%;
@@ -128,15 +144,23 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
   /* home page style */
 }
-/* line 67, ../../src/static/index.scss */
+/* line 90, ../../src/static/index.scss */
 #is-landscape .pages .top {
+  width: 100%;
   height: 33px;
   background: rgba(0, 0, 0, 0.3);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
-/* line 71, ../../src/static/index.scss */
+/* line 98, ../../src/static/index.scss */
 #is-landscape .pages .top a.bac {
   display: block;
   width: 55px;
@@ -146,7 +170,7 @@ html, body {
   background: url(http://192.168.2.103:8099/DZ/dist/static/images/bac.png);
   background-size: contain;
 }
-/* line 80, ../../src/static/index.scss */
+/* line 107, ../../src/static/index.scss */
 #is-landscape .pages .top a.menubutton {
   display: block;
   width: 33px;
@@ -156,17 +180,17 @@ html, body {
   background: url(http://192.168.2.103:8099/DZ/dist/static/images/menubutton.png);
   background-size: contain;
 }
-/* line 89, ../../src/static/index.scss */
+/* line 116, ../../src/static/index.scss */
 #is-landscape .pages .top .pagetitle {
   width: 100px;
   height: 33px;
   margin: 0 auto;
   background-size: contain;
 }
-/* line 96, ../../src/static/index.scss */
+/* line 123, ../../src/static/index.scss */
 #is-landscape .pages ul.menu {
   position: absolute;
-  z-index: 1000;
+  z-index: 2000;
   background: rgba(0, 0, 0, 0.7);
   width: 100px;
   height: 100%;
@@ -176,14 +200,14 @@ html, body {
   -webkit-transition: right .3s ease-in-out;
   transition: right .3s ease-in-out;
 }
-/* line 107, ../../src/static/index.scss */
+/* line 134, ../../src/static/index.scss */
 #is-landscape .pages ul.menu li {
   height: 20%;
   border-bottom: solid 1px #414141;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 112, ../../src/static/index.scss */
+/* line 139, ../../src/static/index.scss */
 #is-landscape .pages ul.menu li a {
   color: #FFF;
   display: box;
@@ -202,11 +226,21 @@ html, body {
   -webkit-box-align: center;
   box-align: center;
 }
-/* line 135, ../../src/static/index.scss */
+/* line 162, ../../src/static/index.scss */
+#is-landscape .pages .next {
+  width: 57px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  right: 25px;
+  bottom: 14px;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/next.png);
+}
+/* line 172, ../../src/static/index.scss */
 #is-landscape .pages.cover {
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/01bg.jpg);
 }
-/* line 137, ../../src/static/index.scss */
+/* line 174, ../../src/static/index.scss */
 #is-landscape .pages.cover .title {
   width: 285px;
   height: 125px;
@@ -214,15 +248,26 @@ html, body {
   background: url(http://192.168.2.103:8099/DZ/dist/static/images/01title.png);
   -webkit-background-size: contain;
   background-size: contain;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
-/* line 146, ../../src/static/index.scss */
+/* line 186, ../../src/static/index.scss */
+#is-landscape .pages.cover .title.show {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+/* line 193, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box {
   width: 195px;
   height: 37px;
   margin: 13% auto 0;
   position: relative;
 }
-/* line 151, ../../src/static/index.scss */
+/* line 198, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .arrows {
   width: 13px;
   height: 13px;
@@ -231,18 +276,30 @@ html, body {
   display: block;
   position: absolute;
   top: 12px;
+  opacity: 0;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-delay: 0;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-backface-visibility: hidden;
 }
-/* line 159, ../../src/static/index.scss */
+/* line 212, ../../src/static/index.scss */
+#is-landscape .pages.cover .button-box .arrows.show {
+  opacity: 1;
+}
+/* line 215, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .arrows.arrow-left {
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipL.png);
   left: 7px;
+  -webkit-animation-name: 'shakeleft';
 }
-/* line 163, ../../src/static/index.scss */
+/* line 220, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .arrows.arrow-right {
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipR.png);
   right: 7px;
+  -webkit-animation-name: 'shakeright';
 }
-/* line 168, ../../src/static/index.scss */
+/* line 226, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .button {
   display: block;
   width: 142px;
@@ -251,15 +308,22 @@ html, body {
   background: url(http://192.168.2.103:8099/DZ/dist/static/images/01button.png);
   -webkit-background-size: contain;
   background-size: contain;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
-/* line 178, ../../src/static/index.scss */
+/* line 237, ../../src/static/index.scss */
+#is-landscape .pages.cover .button-box .button.show {
+  opacity: 1;
+}
+/* line 242, ../../src/static/index.scss */
 #is-landscape .pages.cover .bottom-line {
   position: absolute;
   bottom: 10px;
   height: 30px;
   width: 100%;
 }
-/* line 183, ../../src/static/index.scss */
+/* line 247, ../../src/static/index.scss */
 #is-landscape .pages.cover .bottom-line .logo {
   width: 100px;
   height: 30px;
@@ -268,8 +332,17 @@ html, body {
   background-size: contain;
   position: absolute;
   left: 30px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
-/* line 192, ../../src/static/index.scss */
+/* line 259, ../../src/static/index.scss */
+#is-landscape .pages.cover .bottom-line .logo.show {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/* line 264, ../../src/static/index.scss */
 #is-landscape .pages.cover .bottom-line .bac2home {
   width: 75px;
   height: 30px;
@@ -278,22 +351,53 @@ html, body {
   background-size: contain;
   position: absolute;
   right: 30px;
+  display: block;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
-/* line 205, ../../src/static/index.scss */
+/* line 277, ../../src/static/index.scss */
+#is-landscape .pages.cover .bottom-line .bac2home.show {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/* line 285, ../../src/static/index.scss */
 #is-landscape .pages.list {
-  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/02bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/list/02bg.jpg);
 }
-/* line 207, ../../src/static/index.scss */
+/* line 287, ../../src/static/index.scss */
 #is-landscape .pages.list .pagetitle {
   width: 75px;
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/word.png);
 }
-/* line 213, ../../src/static/index.scss */
+/* line 291, ../../src/static/index.scss */
+#is-landscape .pages.list .car-list-area {
+  margin-top: 35px;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 295, ../../src/static/index.scss */
+#is-landscape .pages.list .car-list-area .inner {
+  width: 300%;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+/* line 300, ../../src/static/index.scss */
+#is-landscape .pages.list .car-list-area .list-page {
+  float: left;
+}
+/* line 303, ../../src/static/index.scss */
+#is-landscape .pages.list .car-list-area ul {
+  width: 568px;
+  margin: 0 auto;
+}
+/* line 306, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area ul li {
   float: left;
   margin: 15px 0 0 14px;
 }
-/* line 216, ../../src/static/index.scss */
+/* line 309, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area ul li a.car-image {
   display: block;
   width: 125px;
@@ -302,7 +406,7 @@ html, body {
   background-size: contain;
   background-position: center;
 }
-/* line 227, ../../src/static/index.scss */
+/* line 320, ../../src/static/index.scss */
 #is-landscape .pages.list .scroll-bar {
   width: 202px;
   height: 4px;
@@ -313,19 +417,22 @@ html, body {
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 236, ../../src/static/index.scss */
+/* line 329, ../../src/static/index.scss */
 #is-landscape .pages.list .scroll-bar .tiplight {
   display: block;
   width: 43px;
   height: 4px;
   position: absolute;
   top: 0;
+  left: 0;
   font-size: 0;
   background: url(http://192.168.2.103:8099/DZ/dist/static/images/tiplight.png);
   -webkit-background-size: contain;
   background-size: contain;
+  -webkit-transition: left 1s ease-in-out;
+  transition: left 1s ease-in-out;
 }
-/* line 248, ../../src/static/index.scss */
+/* line 344, ../../src/static/index.scss */
 #is-landscape .pages.list .scroll-tip {
   width: 95px;
   height: 10px;
@@ -334,32 +441,43 @@ html, body {
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 257, ../../src/static/index.scss */
+/* line 353, ../../src/static/index.scss */
 #is-landscape .pages.tuan {
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/03bg.jpg);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
-/* line 259, ../../src/static/index.scss */
+/* line 360, ../../src/static/index.scss */
+#is-landscape .pages.tuan.show {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+/* line 365, ../../src/static/index.scss */
 #is-landscape .pages.tuan .pagetitle {
   width: 110px;
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
 }
-/* line 263, ../../src/static/index.scss */
+/* line 369, ../../src/static/index.scss */
 #is-landscape .pages.tuan .title {
   width: 200px;
   height: 140px;
-  margin-left: 30px;
+  margin: 35px 0 0 30px;
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/03title.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 271, ../../src/static/index.scss */
+/* line 377, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box {
   width: 160px;
   height: 55px;
   position: relative;
   margin: 42px 0 0 36px;
 }
-/* line 276, ../../src/static/index.scss */
+/* line 382, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .arrows {
   width: 8px;
   height: 8px;
@@ -369,17 +487,17 @@ html, body {
   position: absolute;
   top: 24px;
 }
-/* line 284, ../../src/static/index.scss */
+/* line 390, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .arrows.arrow-left {
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipL-orange.png);
   left: 7px;
 }
-/* line 288, ../../src/static/index.scss */
+/* line 394, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .arrows.arrow-right {
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipR-orange.png);
   right: 7px;
 }
-/* line 293, ../../src/static/index.scss */
+/* line 399, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .button {
   display: block;
   width: 120px;
@@ -389,41 +507,50 @@ html, body {
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 305, ../../src/static/index.scss */
+/* line 411, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 {
-  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04-1.jpg);
+  display: none;
+  /* background-image : url( http://192.168.2.103:8099/DZ/dist/static/images/tuan/04-1.jpg ); */
 }
-/* line 307, ../../src/static/index.scss */
+/* line 414, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 .pagetitle {
   width: 110px;
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
 }
-/* line 311, ../../src/static/index.scss */
+/* line 418, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 .tip {
   width: 152px;
   height: 37px;
-  margin: 15px 0 0 30px;
+  margin: 50px 0 0 30px;
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04tip.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 319, ../../src/static/index.scss */
-#is-landscape .pages.tuan2 .bottom-line {
-  position: fixed;
-  bottom: 20px;
-  left: 110px;
+/* line 426, ../../src/static/index.scss */
+#is-landscape .pages.tuan2 .slices-box {
+  width: 100%;
+  height: 100%;
 }
-/* line 323, ../../src/static/index.scss */
-#is-landscape .pages.tuan2 .bottom-line .scroll-bar {
+/* line 429, ../../src/static/index.scss */
+#is-landscape .pages.tuan2 .slices-box div {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+/* line 437, ../../src/static/index.scss */
+#is-landscape .pages.tuan2 .scroll-bar {
   width: 340px;
   height: 11px;
   font-size: 0;
-  position: relative;
-  float: left;
+  position: fixed;
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04line.png);
+  bottom: 20px;
+  left: 110px;
 }
-/* line 330, ../../src/static/index.scss */
-#is-landscape .pages.tuan2 .bottom-line .scroll-bar .scroll-btn {
+/* line 445, ../../src/static/index.scss */
+#is-landscape .pages.tuan2 .scroll-bar .scroll-btn {
   width: 53px;
   height: 53px;
   font-size: 0;
@@ -432,25 +559,404 @@ html, body {
   top: -21px;
   left: -21px;
 }
-/* line 340, ../../src/static/index.scss */
-#is-landscape .pages.tuan2 .bottom-line .next {
-  width: 57px;
-  height: 30px;
-  display: block;
-  margin: -9px 0 0 30px;
-  float: right;
-  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/next.png);
-}
-/* line 351, ../../src/static/index.scss */
+/* line 457, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 {
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/05bg.jpg);
 }
-/* line 353, ../../src/static/index.scss */
+/* line 459, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .pagetitle {
   width: 110px;
   background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
 }
+/* line 463, ../../src/static/index.scss */
+#is-landscape .pages.tuan3 .img-list-area {
+  margin: 40px auto 0;
+}
+/* line 465, ../../src/static/index.scss */
+#is-landscape .pages.tuan3 .img-list-area ul {
+  width: 480px;
+  margin: 0 auto;
+}
+/* line 468, ../../src/static/index.scss */
+#is-landscape .pages.tuan3 .img-list-area ul li {
+  float: left;
+  margin: 1px 0 0 1px;
+}
+/* line 471, ../../src/static/index.scss */
+#is-landscape .pages.tuan3 .img-list-area ul li a.car-image {
+  display: block;
+  width: 118px;
+  height: 100px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 483, ../../src/static/index.scss */
+#is-landscape .pages.tuan3 .tip {
+  width: 123px;
+  height: 22px;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/05tip.png);
+  margin: 10px auto;
+}
+/* line 490, ../../src/static/index.scss */
+#is-landscape .pages.tuan4 {
+  background: #000;
+}
+/* line 493, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover {
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-01bg.jpg);
+}
+/* line 495, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .title {
+  width: 345px;
+  height: 108px;
+  margin: 8% auto 0;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-01title.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+/* line 507, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .title.show {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+/* line 514, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .button-box {
+  width: 195px;
+  height: 37px;
+  margin: 13% auto 0;
+  position: relative;
+}
+/* line 519, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .button-box .arrows {
+  width: 13px;
+  height: 13px;
+  -webkit-background-size: contain;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 12px;
+  opacity: 0;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-delay: 0;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-backface-visibility: hidden;
+}
+/* line 533, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .button-box .arrows.show {
+  opacity: 1;
+}
+/* line 536, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .button-box .arrows.arrow-left {
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipL.png);
+  left: 7px;
+  -webkit-animation-name: 'shakeleft';
+}
+/* line 541, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .button-box .arrows.arrow-right {
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipR.png);
+  right: 7px;
+  -webkit-animation-name: 'shakeright';
+}
+/* line 547, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .button-box .button {
+  display: block;
+  width: 142px;
+  height: 37px;
+  margin: 0 auto;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-01button.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+/* line 558, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .button-box .button.show {
+  opacity: 1;
+}
+/* line 563, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .bottom-line {
+  position: absolute;
+  bottom: 10px;
+  height: 30px;
+  width: 100%;
+}
+/* line 568, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .bottom-line .logo {
+  width: 100px;
+  height: 30px;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/logo.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  left: 30px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+/* line 580, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .bottom-line .logo.show {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/* line 585, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .bottom-line .bac2home {
+  width: 75px;
+  height: 30px;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/bac2home.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  right: 30px;
+  display: block;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+/* line 598, ../../src/static/index.scss */
+#is-landscape .pages.exp-cover .bottom-line .bac2home.show {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/* line 605, ../../src/static/index.scss */
+#is-landscape .pages.exp-list {
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-bg.jpg);
+}
+/* line 607, ../../src/static/index.scss */
+#is-landscape .pages.exp-list .pagetitle {
+  width: 75px;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-list/02titleword.png);
+}
+/* line 611, ../../src/static/index.scss */
+#is-landscape .pages.exp-list .car-list-area {
+  margin-top: 5%;
+  margin-left: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 616, ../../src/static/index.scss */
+#is-landscape .pages.exp-list .car-list-area .inner {
+  width: 300%;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+/* line 621, ../../src/static/index.scss */
+#is-landscape .pages.exp-list .car-list-area .list-page {
+  float: left;
+}
+/* line 625, ../../src/static/index.scss */
+#is-landscape .pages.exp-list .car-list-area ul li {
+  float: left;
+  margin: 15px 0 0;
+}
+/* line 628, ../../src/static/index.scss */
+#is-landscape .pages.exp-list .car-list-area ul li a.car-image {
+  display: block;
+  width: 165px;
+  height: 205px;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center;
+}
+/* line 639, ../../src/static/index.scss */
+#is-landscape .pages.exp-list .scroll-bar {
+  width: 202px;
+  height: 4px;
+  font-size: 0;
+  margin: 10px auto 0;
+  position: relative;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipbg.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+/* line 648, ../../src/static/index.scss */
+#is-landscape .pages.exp-list .scroll-bar .tiplight {
+  display: block;
+  width: 43px;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tiplight.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  -webkit-transition: left 1s ease-in-out;
+  transition: left 1s ease-in-out;
+}
+/* line 663, ../../src/static/index.scss */
+#is-landscape .pages.exp-list .scroll-tip {
+  width: 180px;
+  height: 10px;
+  margin: 10px auto 0;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-list/02tipword.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+/* line 673, ../../src/static/index.scss */
+#is-landscape .pages.exp-cars {
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-bg.jpg);
+}
+/* line 675, ../../src/static/index.scss */
+#is-landscape .pages.exp-cars .pagetitle {
+  width: 70px;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-cars/04titleword.png);
+}
+/* line 679, ../../src/static/index.scss */
+#is-landscape .pages.exp-cars .car-list-area {
+  margin-top: 35px;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 683, ../../src/static/index.scss */
+#is-landscape .pages.exp-cars .car-list-area .inner {
+  width: 300%;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+/* line 688, ../../src/static/index.scss */
+#is-landscape .pages.exp-cars .car-list-area .list-page {
+  float: left;
+}
+/* line 691, ../../src/static/index.scss */
+#is-landscape .pages.exp-cars .car-list-area ul {
+  width: 568px;
+  margin: 0 auto;
+}
+/* line 694, ../../src/static/index.scss */
+#is-landscape .pages.exp-cars .car-list-area ul li {
+  float: left;
+  margin: 15px 0 0 14px;
+}
+/* line 697, ../../src/static/index.scss */
+#is-landscape .pages.exp-cars .car-list-area ul li a.car-image {
+  display: block;
+  width: 125px;
+  height: 100px;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center;
+}
+/* line 708, ../../src/static/index.scss */
+#is-landscape .pages.exp-cars .scroll-bar {
+  width: 202px;
+  height: 4px;
+  font-size: 0;
+  margin: 10px auto 0;
+  position: relative;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipbg.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+/* line 717, ../../src/static/index.scss */
+#is-landscape .pages.exp-cars .scroll-bar .tiplight {
+  display: block;
+  width: 43px;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tiplight.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  -webkit-transition: left 1s ease-in-out;
+  transition: left 1s ease-in-out;
+}
+/* line 732, ../../src/static/index.scss */
+#is-landscape .pages.exp-cars .scroll-tip {
+  width: 115px;
+  height: 10px;
+  margin: 10px auto 0;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-cars/04tipword.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+/* line 741, ../../src/static/index.scss */
+#is-landscape .pages.exp-booth {
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-bg.jpg);
+}
+/* line 743, ../../src/static/index.scss */
+#is-landscape .pages.exp-booth .pagetitle {
+  width: 90px;
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-booth/03titleword.png);
+}
+/* line 747, ../../src/static/index.scss */
+#is-landscape .pages.exp-booth .booth-nav {
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-box-align: center;
+  box-align: center;
+}
+/* line 763, ../../src/static/index.scss */
+#is-landscape .pages.exp-booth .booth-nav a {
+  display: block;
+  width: 66px;
+  height: 33px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+/* line 772, ../../src/static/index.scss */
+#is-landscape .pages.exp-booth .booth-nav.nav-left {
+  left: 0;
+}
+/* line 775, ../../src/static/index.scss */
+#is-landscape .pages.exp-booth .booth-nav.nav-right {
+  right: 0;
+}
 
+@-webkit-keyframes shakeleft {
+  0%, 50%, 100% {
+    left: 0;
+  }
+  25%, 75% {
+    left: 7px;
+  }
+}
+@keyframes shakeleft {
+  0%, 50%, 100% {
+    left: 0;
+  }
+  25%, 75% {
+    left: 7px;
+  }
+}
+@-webkit-keyframes shakeright {
+  0%, 50%, 100% {
+    right: 0;
+  }
+  25%, 75% {
+    right: 7px;
+  }
+}
+@keyframes shakeright {
+  0%, 50%, 100% {
+    right: 0;
+  }
+  25%, 75% {
+    right: 7px;
+  }
+}
 /*
 
 @media all and (orientation: portrait) {

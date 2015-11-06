@@ -1,0 +1,365 @@
+div.sides {
+    z-index : 100000;
+    position : absolute;
+}
+
+a.points {
+    width : 36px;
+    height : 36px;
+    display : block;
+    position : absolute;
+    background : transparent;
+    text-decoration : none;
+    font-size : 0;
+    z-index : 100;
+    -webkit-touch-callout : none;
+    -webkit-animation-name : 'zoom';
+    -webkit-animation-duration : 4s;
+    -webkit-animation-timing-function : ease; 
+    -webkit-animation-delay : 0;
+    -webkit-animation-iteration-count : infinite;
+    -webkit-backface-visibility : hidden;
+    span {
+        position : relative;
+        display : block;
+        width : 19px;
+        height : 19px;
+        border : solid 4px #C74140;
+        border-radius : 100%;
+        -webkit-border-radius : 100%;
+        b {
+            background : #C74140;
+            display : block;
+            width : 13px;
+            height : 13px;
+            margin : 3px auto;
+            border-radius : 100%;
+            -webkit-border-radius : 100%;
+        }
+    }
+    &.blue {
+        span {
+            border-color : #1476CC;
+        }
+        b {
+            background : #1476CC;
+        }
+    }
+    &.red {
+        span {
+            border-color : #C74140;
+        }
+    }
+}
+a.text {
+    font-size : 14px;
+    display : block;
+    height : 40px;
+    line-height : 20px;
+    position : absolute;
+    z-index : 100000000000000;
+    background : #C74140;
+    color : #FFF;
+    padding : 0 10px;
+    border-radius : 3px;
+    -webkit-border-radius : 3px;
+    &.blue {
+        background : #1476CC;
+        height : 20px;
+    }
+}
+
+@-webkit-keyframes zoom {
+    0%, 50%, 100% {
+        transform : scale( 1 );
+        -webkit-transform : scale( 1 );
+    }
+    25%, 75% {
+        transform : scale( 1.5 );
+        -webkit-transform : scale( 1.5 );
+    }
+}
+@keyframes zoom {
+    0%, 50%, 100% {
+        transform : scale( 1.1 );
+        -webkit-transform : scale( 1.1 );
+    }
+    25%, 75% {
+        transform : scale( 1.5 );
+        -webkit-transform : scale( 1.5 );
+    }
+}
+
+.pictures {
+    position : fixed;
+    z-index : 10000000;
+    transition : all .2s ease-in-out;
+    -webkit-transition : all .2s ease-in-out;
+    -webkit-backface-visibility : hidden;
+    &.hidden {
+        transform : scale( 0 );
+        -webkit-transform : scale( 0 );
+    }
+    .btn-line {
+        width : 100%;
+        bottom : 30px;     
+        position : absolute;
+        z-index : 10000001;
+        a.back {
+            color : #FFF;
+            text-decoration : none;
+            font-size : 12px;
+            display : block;
+            height : 26px;
+            line-height : 26px;
+            width : 70px;
+            margin : 0 auto;
+            text-align : center;
+            border : solid 2px #FFF;
+            border-radius : 35px;
+            -webkit-border-radius : 35px;
+        }
+    }
+    .items {
+        width : 100%;
+        height : 100%;
+        display : none;
+        background-repeat : no-repeat;
+        background-size : contain;
+        -webkit-background-size : contain;
+        .g, 
+        .t {
+            position : absolute;
+            background-repeat : no-repeat;
+            background-size : contain;
+            -webkit-background-size : contain;
+            transition : all .6s ease-in-out;
+            -webkit-transition : all .6s ease-in-out;
+            opacity : 1;
+            -webkit-backface-visibility : hidden;
+            top : 0;
+        }
+
+        .t {
+            transform : scale( 0 );
+            -webkit-transform : scale( 0 );
+        }
+
+        &.active {
+            .t {
+                transform : scale( 1 );
+                -webkit-transform : scale( 1 );
+            }
+        }
+        &.item-1 {
+            background-image : url( @@path.images/01bg.jpg );
+            .g1 {
+                width : 100%;
+                height : 52.67%;
+                top : -250px;
+                background-image : url( @@path.images/01main.png );
+            }
+            .t1 {
+                width : 100%;
+                height : 15.94%;
+                top : 44.55%;
+                background-image : url( @@path.images/01word.png );
+            }
+            &.active {
+                .g1 {
+                    top : 0;
+                }
+            }
+        }
+        &.item-2 {
+            background-image : url( @@path.images/02bg.jpg );
+            .g {
+                width : 50%;
+                height : 27.13%;
+                &.g1 {
+                    left : -200px;
+                    background-image : url( @@path.images/02main1.png );
+                }
+                &.g2 {
+                    right : -200px;
+                    background-image : url( @@path.images/02main2.png );
+                }
+            }
+            .t1 {
+                width : 100%;
+                height : 16.24%;
+                top : 33.66%;
+                background-image : url( @@path.images/02word.png );
+            }
+            &.active {
+                .g1 {
+                    left : 0;
+                }
+                .g2 {
+                    right : 0;
+                }
+            }
+        }
+        &.item-3 {
+            background-image : url( @@path.images/03bg.jpg );
+            .g1 {
+                width : 100%;
+                height : 45.74%;
+                top : -250px;
+                background-image : url( @@path.images/03main.png );
+            }
+            .t1 {
+                width : 100%;
+                height : 17.03%;
+                top : 43.56%;
+                background-image : url( @@path.images/03word.png );
+            }
+            &.active {
+                .g1 {
+                    top : 0;
+                }
+            }
+        }
+        &.item-4 {
+            background-image : url( @@path.images/04bg.jpg );
+            .g1 {
+                width : 100%;
+                height : 29.70%;
+                top : 57.43%; 
+                transform : scale( 0 );
+                -webkit-transform : scale( 0 );
+                background-image : url( @@path.images/04main.png );
+            }
+            .t1 {
+                width : 100%;
+                height : 17.23%;
+                top : 43.56%;
+                background-image : url( @@path.images/04word.png );
+            }
+            &.active {
+                .g1 {
+                    transform : scale( 1 );
+                    -webkit-transform : scale( 1 );
+                }
+            }
+        }
+        &.item-5 {
+            background-image : url( @@path.images/05bg.jpg );
+            .g1 {
+                width : 100%;
+                height : 50.5%;
+                top : 49.5%; 
+                transform : scale( 8 );
+                -webkit-transform : scale( 8 );
+                opacity : 0;
+                background-image : url( @@path.images/05main.png );
+            }
+            .t1 {
+                width : 100%;
+                height : 25.64%;
+                top : 26.73%;
+                background-image : url( @@path.images/05word.png );
+            }
+            &.active {
+                .g1 {
+                    transform : scale( 1 );
+                    -webkit-transform : scale( 1 );
+                    opacity : 1;
+                }
+            }
+        }
+        &.item-6 {
+            background-image : url( @@path.images/06bg.jpg );
+            .g1 {
+                width : 100%;
+                height : 55.54%;
+                top : 144.6%; 
+                background-image : url( @@path.images/06main.png );
+            }
+            .t1 {
+                width : 100%;
+                height : 17.03%;
+                top : 30.69%;
+                background-image : url( @@path.images/06word.png );
+            }
+            &.active {
+                .g1 {
+                    top : 44.6%; 
+                }
+            }
+        }
+        &.item-7 {
+            background-image : url( @@path.images/07bg.jpg );
+            .g1 {
+                width : 100%;
+                height : 50.2%;
+                top : -250px;
+                background-image : url( @@path.images/07main.png );
+            }
+            .t1 {
+                width : 100%;
+                height : 14.75%;
+                top : 44.06%;
+                background-image : url( @@path.images/07word.png );
+            }
+            &.active {
+                .g1 {
+                    top : 0;
+                }
+            }
+        }
+        &.item-8 {
+            background-image : url( @@path.images/08bg.jpg );
+            .g1 {
+                width : 100%;
+                height : 46.44%;
+                top : -250px;
+                background-image : url( @@path.images/08main.png );
+            }
+            .t1 {
+                width : 100%;
+                height : 14.85%;
+                top : 42.08%;
+                background-image : url( @@path.images/08word.png );
+            }
+            &.active {
+                .g1 {
+                    top : 0;
+                }
+            }
+        }
+        &.item-9 {
+            background-image : url( @@path.images/10bg.jpg );
+            .g1 {
+                width : 100%;
+                height : 100%;
+                opacity : 0;
+                background-image : url( @@path.images/10main.jpg );
+                transition : all 1.2s ease-in-out;
+                -webkit-transition : all 1.2s ease-in-out;
+                a {
+                    display : block;
+                    width : 41.25%;
+                    height : 26.8%;
+                    background : rgba( 125, 125, 125, 0 );
+                    position : absolute;
+                    top : 27.84%;
+                    left : 29.19%;
+                }
+            }
+            .t1 {
+                width : 100%;
+                height : 14.85%;
+                top : 61.88%;
+                left : 5.5%;
+                background-image : url( @@path.images/10word.png );
+            }
+            &.active {
+                .g1 {
+                    opacity : 1;
+                }
+            }
+        }
+
+    }
+}

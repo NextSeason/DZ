@@ -5,6 +5,18 @@ module.exports = function( grunt ) {
         pkg : grunt.file.readJSON( 'package.json' ),
         host : "http://192.168.2.103:8099/DZ/dist",
         dist : 'dist',
+        includereplace : {
+            html : {
+                options : {
+                },
+                files : [ {
+                    expand : true,
+                    cwd : 'src/',
+                    src : [ '**/*.html' ],
+                    dest : '<%= dist %>/'
+                } ]
+            }
+        },
         replace : {
             dist : {
                 options : {
@@ -42,11 +54,11 @@ module.exports = function( grunt ) {
         },
 
         copy : {
-            html : {
+            _html : {
                 files : [ {
                     expand : true,
-                    flatten : true,
-                    src : [ 'src/**/*.html' ],
+                    cwd : 'src/',
+                    src : [ '**/*.html' ],
                     dest : '<%= dist %>/'
                 } ]
             },
@@ -99,7 +111,7 @@ module.exports = function( grunt ) {
         watch : {
             css : {
                 files : [ 'src/**/*' ],
-                tasks : [ 'copy', 'compass', 'replace' ]
+                tasks : [ 'copy', 'includereplace', 'compass', 'replace' ]
             }
         },
 
@@ -144,6 +156,7 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( 'grunt-contrib-watch' );
     grunt.loadNpmTasks( 'grunt-contrib-concat' );
     grunt.loadNpmTasks( 'grunt-replace' );
+    grunt.loadNpmTasks( 'grunt-include-replace' );
     //grunt.loadNpmTasks( 'grunt-tinypng' );
     //grunt.loadNpmTasks( 'grunt-contrib-uglify' );
     //grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
@@ -152,5 +165,5 @@ module.exports = function( grunt ) {
         grunt.file.delete( './dist', { force : true } );
     } );
 
-    grunt.registerTask( 'default', [ 'remove', 'copy', 'compass', 'replace' ] );
+    grunt.registerTask( 'default', [ 'remove', 'copy', 'includereplace', 'compass', 'replace' ] );
 };

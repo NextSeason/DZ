@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="user-scalable=no,width=device-width" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title></title>
         <link rel="stylesheet" href="http://192.168.2.103:8099/DZ/dist/static/index.css" />
@@ -21,11 +21,23 @@
                 </div>
                 <div class="bottom-line">
                     <div class="logo"></div>
-                    <div class="bac2home"></div>
+                    <a href="http://192.168.2.103:8099/DZ/dist/list.html" class="bac2home"></a>
                 </div>
             </div>
         </div>
         <script src="http://192.168.2.103:8099/DZ/dist/static/zepto.min.js"></script>
         <script src="http://192.168.2.103:8099/DZ/dist/static/index.js"></script>
+        <script>
+            $().ready( function() {
+                $( '.title' ).addClass( 'show' );
+                setTimeout( function() {
+                    $( '.button-box .button' ).addClass( 'show' );
+                    setTimeout( function() {
+                        $( '.button-box .arrows' ).addClass( 'show' );
+                        $( '.logo, .bac2home' ).addClass( 'show' );
+                    }, 1000 );
+                }, 1000 );
+             } );
+        </script>
     </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title></title>
+        <link rel="stylesheet" href="@@path.css/index.css" />
+        <link rel="stylesheet" href="@@path.css/fullview.css" />
+    </head>
+    <body>
+        <div id="is-portrait" class="portrait">
+            <div class="rotation"></div>
+        </div>
+        <div id="is-landscape" class="landscape">
+            <div class="pages tuan4">
+                <div class="top">
+                    <a href="@@host/tuan/3.html" class="bac"></a>
+                    <a href="###" class="menubutton"></a>
+                    <div class="pagetitle"></div>
+                </div>
+                @@include( 'includes/menu.html' )
+            </div>
+        </div>
+        <script src="@@path.js/zepto.min.js"></script>
+        <script src="@@path.js/index.js"></script>
+        <script src="@@path.js/three.min.js"></script>
+        <script src="@@path.js/DeviceOrientationControls.js"></script>
+        <script src="@@path.js/CSS3DRenderer.js"></script>
+        <script src="@@path.js/fullview.js"></script>
+    </body>
+</html>
