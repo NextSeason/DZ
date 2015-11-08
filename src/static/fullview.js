@@ -55,47 +55,11 @@ var Jaguar = ({
         className : 'blue',
         link : 'http://test.qctt.cn/JieBaoFirst/waiguan.html'
     }, {
-        coords : [ 440, 555 ],
-        target : 5,
-        picture : 9
-    }, {
-        coords : [ 260, 340 ],
-        target : 5,
-        picture : 1
-    }, {
-        coords : [ 40, 410 ],
-        target : 5,
-        picture : 2
-    }, {
-        coords : [ 35, 520 ],
-        target : 5,
-        picture : 3
-    }, {
-        coords : [ 475, 685 ],
-        target : 5,
-        picture : 4
-    }, {
-        coords : [ 990, 340 ],
-        target : 5,
-        picture : 5
-    }, {
-        coords : [ 910, 900 ],
-        target : 5,
-        picture : 6
-    }, {
-        coords : [ 535, 995 ],
-        target : 2,
-        picture : 7
-    }, {
         coords : [ 580, 45 ],
         target : 3,
         picture : 8
     } ],
     text : [ {
-        coords : [ 480, 555 ],
-        t : '点击中控台<br />启动按钮开启试驾体验',
-        target : 5
-    }, {
         coords : [ 135, 455 ],
         t : '打开车门查看车身外观',
         className : 'blue',

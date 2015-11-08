@@ -20,24 +20,34 @@
                 </div>
                 <div class="img-list-area">
                     <ul class="clearfix">
-                        <li><a href="" style="background-image:url(@@path.images/tuan/05-1.png)" class="car-image"></a></li>
-                        <li><a href="" style="background-image:url(@@path.images/tuan/05-2.png)" class="car-image"></a></li>
-                        <li><a href="" style="background-image:url(@@path.images/tuan/05-3.png)" class="car-image"></a></li>
-                        <li><a href="" style="background-image:url(@@path.images/tuan/05-4.png)" class="car-image"></a></li>
-                        <li><a href="" style="background-image:url(@@path.images/tuan/05-5.png)" class="car-image"></a></li>
-                        <li><a href="" style="background-image:url(@@path.images/tuan/05-6.png)" class="car-image"></a></li>
-                        <li><a href="" style="background-image:url(@@path.images/tuan/05-7.png)" class="car-image"></a></li>
-                        <li><a href="" style="background-image:url(@@path.images/tuan/05-8.png)" class="car-image"></a></li>
+                        <li><a href="###" data-src="@@path.images/tuan/06pic.jpg"><img src="@@path.images/tuan/05-1.png" /></a></li>
+                        <li><a href="###" data-src="@@path.images/tuan/06pic.jpg"><img src="@@path.images/tuan/05-2.png" /></a></li>
+                        <li><a href="###" data-src="@@path.images/tuan/06pic.jpg"><img src="@@path.images/tuan/05-3.png" /></a></li>
+                        <li><a href="###" data-src="@@path.images/tuan/06pic.jpg"><img src="@@path.images/tuan/05-4.png" /></a></li>
+                    </ul>
+                    <ul class="clearfix">
+                        <li><a href="###" data-src="@@path.images/tuan/06pic.jpg"><img src="@@path.images/tuan/05-5.png" /></a></li>
+                        <li><a href="###" data-src="@@path.images/tuan/06pic.jpg"><img src="@@path.images/tuan/05-6.png" /></a></li>
+                        <li><a href="###" data-src="@@path.images/tuan/06pic.jpg"><img src="@@path.images/tuan/05-7.png" /></a></li>
+                        <li><a href="###" data-src="@@path.images/tuan/06pic.jpg"><img src="@@path.images/tuan/05-8.png" /></a></li>
                     </ul>
                 </div>
+                <div class="big-pic-layer"></div>
                 <div class="tip bg-contain"></div>
                 <a href="###" class="next bg-contain"></a>
-                @@include( 'includes/menu.html' )
+                @@include( '../includes/menu.html' )
                 <a href="@@host/tuan/4.html" class="next bg-contain"></a>
             </div>
         </div>
         <script src="@@path.js/zepto.min.js"></script>
         <script src="@@path.js/index.js"></script>
-        <script></script>
+        <script>
+            ( function() {
+                $( '.img-list-area ul a' ).on( 'click', function( e ) {
+                    e.preventDefault();
+                    $( '.big-pic-layer' ).css( 'background-image', 'url(' + $( this ).attr( 'data-src' ) + ')' ).show();;
+                } );
+            } )();
+        </script>
     </body>
 </html>

@@ -1,5 +1,4 @@
 ( function() {
-    /*
     function onorientationchange() {
         var orientation = window.orientation;
         if ( orientation === 180 || orientation === 0) { 
@@ -12,7 +11,6 @@
     }
     $( window ).on( "onorientationchange" in window ? "orientationchange" : "resize", onorientationchange ); 
     $().ready( onorientationchange );
-    */
 
     $( 'a.menubutton' ).on( 'click', function( e ) {
         e.preventDefault();

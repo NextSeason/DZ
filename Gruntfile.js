@@ -3,7 +3,8 @@
 module.exports = function( grunt ) {
     grunt.initConfig( {
         pkg : grunt.file.readJSON( 'package.json' ),
-        host : "http://192.168.2.103:8099/DZ/dist",
+        //host : "http://192.168.2.103:8099/DZ/dist",
+        host : 'http://45.56.91.160',
         dist : 'dist',
         includereplace : {
             html : {
