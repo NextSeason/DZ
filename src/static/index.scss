@@ -28,6 +28,7 @@ textarea, input, a:link, .btns, p, div {
 }
 
 #is-portrait {
+    display : none!important;
     background : #000;
     height : 100%; 
     width : 100%;
@@ -50,7 +51,6 @@ textarea, input, a:link, .btns, p, div {
         -webkit-background-size : cover;
         background-size : cover;
     }
-    display : none;
 }
 
 #is-landscape {
@@ -474,15 +474,16 @@ textarea, input, a:link, .btns, p, div {
             .img-list-area {
                 margin : 40px auto 0;
                 ul {
-                    width : 90%;
-                    margin : 0 auto;
+                    width : 97.37%;
+                    margin : 0 auto 15px;
                     li {
                         float : left;
                         width : 25%;
                         margin-top : 5px;
                         a {
                             display : block;
-                            width : 100%;
+                            width : 89.29%;
+                            margin : 0 auto;
                             height : auto;
                             -webkit-background-size : cover;
                             background-size : cover;
@@ -496,8 +497,8 @@ textarea, input, a:link, .btns, p, div {
                 }
             }
             .tip {
-                width : 123px;
-                height : 22px;
+                width : 75px;
+                height : 10px;
                 background-image : url( @@path.images/tuan/05tip.png );
                 margin : 10px auto;
             }
@@ -515,6 +516,158 @@ textarea, input, a:link, .btns, p, div {
                 -webkit-background-size : cover;
                 background-size : cover;
                 display : none;
+                .item {
+                    width : 100%;
+                    height : 100%;
+                    display : none;
+                    padding-top : 0.1px;
+                    background-position : center;
+                    -webkit-background-size : cover;
+                    background-size : cover;
+                    background-repeat : no-repeat;
+                    .center-helper {
+                        width : 100%;
+                        height : 100%;
+                        display : -webkit-box;
+                        display : box;
+
+                        -webkit-box-orient : horizontal;
+                        box-orient : horizontal;
+
+                        -webkit-box-align : center;
+                        box-align : center;
+                    }
+                    .inner {
+                        width : 100%;
+                    }
+                    .txt,
+                    .back-btn,
+                    .img {
+                        display : block;
+                        img {
+                            width : 100%;
+                            height : auto;
+                        }
+                    }
+                    &.item-1 {
+                        background-image :url( @@path.images/tuan/06-1.jpg );
+                        .inner {
+                            margin-left : 7.8%;
+                            .txt {
+                                width : 29.02%;
+                            }
+                            .back-btn {
+                                width : 15.26%; 
+                                margin-top : 67px;
+                            }
+                        }
+                    }
+                    &.item-2 {
+                        background-image :url( @@path.images/tuan/06-2.jpg );
+                        .inner {
+                            margin-left : 7.8%;
+                            .txt {
+                                width : 21.58%;
+                            }
+                            .back-btn {
+                                width : 15.26%; 
+                                margin-top : 34px;
+                            }
+                        }
+                    }
+                    &.item-3 {
+                        background-image :url( @@path.images/tuan/06-3.jpg );
+                        .inner {
+                            margin : 0 auto;
+                            width : 85.44%;
+                            position : relative;
+                        }
+                        .img {
+                            width : 62%;
+                            float : left;
+                        }
+                        .txt {
+                            float : right;
+                            width : 36.76%;
+                        }
+                        .back-btn {
+                            position : absolute;
+                            right : 0;
+                            bottom : 0;
+                            width : 17.86%;
+                        }
+                    }
+                    &.item-4 {
+                        background-image :url( @@path.images/tuan/06-4.jpg );
+                        .inner {
+                            margin-left : 7.8%;
+                            .txt {
+                                width : 23.77%;
+                            }
+                            .back-btn {
+                                width : 15.26%; 
+                                margin-top : 34px;
+                            }
+                        }
+                    }
+                    &.item-5 {
+                        background-image :url( @@path.images/tuan/06-5.jpg );
+                        .inner {
+                            margin-left : 7.8%;
+                            .txt {
+                                width : 22.19%;
+                            }
+                            .back-btn {
+                                width : 15.26%; 
+                                margin-top : 34px;
+                            }
+                        }
+                    }
+                    &.item-6 {
+                        background-image :url( @@path.images/tuan/06-6.jpg );
+                        .inner {
+                            height : 100%;
+                        }
+                        .txt {
+                            width : 39.3%;
+                            position : absolute;
+                            right : 3.95%;
+                            bottom : 19.45%;
+                        }
+                        .back-btn {
+                            width : 15.26%;
+                            position : absolute;
+                            left : 7.8%;
+                            bottom : 9.45%;
+                        }
+                    }
+                    &.item-7 {
+                        background-image :url( @@path.images/tuan/06-7.jpg );
+                        .inner {
+                            margin-left : 7.8%;
+                            .txt {
+                                width : 29.12%;
+                            }
+                            .back-btn {
+                                width : 15.26%; 
+                                margin-top : 34px;
+                            }
+                        }
+                    }
+                    &.item-8 {
+                        background-image :url( @@path.images/tuan/06-8.jpg );
+                        .inner {
+                            margin-left : 7.8%;
+                            .txt {
+                                width : 80.96%;
+                            }
+                            .back-btn {
+                                width : 15.26%; 
+                                margin-top : 34px;
+                            }
+                        }
+                    }
+                }
             }
         }
         &.tuan4 {
@@ -523,8 +676,8 @@ textarea, input, a:link, .btns, p, div {
         &.exp-cover {
             background-image : url( @@path.images/exp-01bg.jpg );
             .title {
-                width : 345px;
-                height : 108px;
+                width : 60.53%;
+                height : 34.02%;
                 margin : 8% auto 0;
                 background : url( @@path.images/exp-01title.png );
                 -webkit-background-size : contain;
@@ -658,8 +811,40 @@ textarea, input, a:link, .btns, p, div {
                         float : left;
                         margin : 15px 0 0;
                         width : 33.3%; 
-                        a {
+                        position : relative;
+                        perspective : 1000px;
+                        a.anchor {
                             display : block;
+                            position : absolute;
+                            background : rgba( 0, 0, 0, 0 );
+                            width : 87%;
+                            height : 38%;
+                            top : 4%;
+                            left : 4%;
+                            -webkit-transform : rotateX( 49deg ) rotateY( -8deg ) rotateZ( 47deg );
+                            &.anchor-bottom {
+                                top : 40%;
+                            }
+                            &.anchor-6 {
+                                width : 74%;
+                                height : 33%;
+                                top : 34%;
+                                left : 9%;
+                            }
+                            &.anchor-7 {
+                                width : 45%;
+                                height : 34%;
+                                top : 34%;
+                                left : 26%;
+                            }
+                            &.anchor-8 {
+                                width : 72%;
+                                height : 34%;
+                                top : 34%;
+                                left : 11%;
+                            }
+                        }
+                        div {
                             width : 100%;
                             -webkit-background-size : contain;
                             background-size : contain;
@@ -789,10 +974,8 @@ textarea, input, a:link, .btns, p, div {
 
                 -webkit-box-orient : horizontal;
                 box-orient : horizontal;
-
                 -webkit-box-pack : center;
                 box-pack : center;
-
                 -webkit-box-align : center;
                 box-align : center;
 
@@ -812,9 +995,240 @@ textarea, input, a:link, .btns, p, div {
                     right : 0;
                 }
             }
+            .booth-detail {
+                width : 100%;
+                height : calc( 100% - 33px );
+                margin-top : 33px; 
+                display : -webkit-box;
+                display : box;
+
+                -webkit-box-orient : horizontal;
+                box-orient : horizontal;
+
+                -webkit-box-pack : center;
+                box-pack : center;
+
+                -webkit-box-align : center;
+                box-align : center;
+
+                .boothes {
+                    width : 58.80%;
+                    background : rgba( 255, 255, 255, .3 );
+                    padding : 2.99%;
+                    -webkit-box-sizing : border-box;
+                    box-sizing : border-box;
+
+                    li {
+                        position : relative;
+                        float : left;
+                        margin-left : 3.18%;
+                        font-size : 0;
+                        a {
+                            display : block;
+                            img {
+                                width : 100%;
+                                height : auto;
+                            }
+                        }
+                        span.location-icon {
+                            width : 33px;
+                            height : 33px;
+                            position : absolute;
+                            top : -13px;
+                            left : calc( 50% - 16.5px );
+                            background : url( @@path.images/exp-booth/hallbutton.png ) no-repeat center; 
+                            background-size : contain;
+                        }
+                    }
+                    &.booth-1-1 {
+                        .kia {
+                            width : 48.5%;
+                            margin-left : 0;
+                        }
+                        .dongfengfengshen {
+                            width : 25.8%;
+                        }
+                        .soueast {
+                            width : 19.1%;
+                        }
+                        .mazda {
+                            width : 36.7%;
+                            margin-left : 0;
+                            margin-top : 6.92%;
+                        }
+                        .peugeot {
+                            width : 28.6%;
+                            margin-top : 6.92%;
+                        }
+                        .citroen {
+                            width : 28.34%;
+                            margin-top : 6.92%;
+                        }
+                    }
+                    &.booth-2-1 {
+                        .zhengzhourichan {
+                            width : 14.49%;
+                            margin-left : 0;
+                        }
+                        .subaru {
+                            width : 21.02%;
+                        }
+                        .qoros {
+                            width : 18.79%;
+                        }
+                        .renault {
+                            width : 35.99%;
+                        }
+                        .shuanghuan {
+                            width : 11.6%;
+                            margin-top : 6.92%;
+                            margin-left : 0;
+                        }
+                        .ford {
+                            width : 71.7%;
+                            margin-top : 6.92%;
+                        }
+                        .title {
+                            width : 10.3%;
+                            margin-top : 6.92%;
+                        }
+                    }
+                    &.booth-3-1 {
+                        .yiqi {
+                            width : 24.85%;
+                            margin-left : 0;
+                        }
+                        .changan2 {
+                            width : 36.94%;
+                        }
+                        .changan {
+                            width : 13.45%;
+                            margin-left : 0.32% 
+                        }
+                        .landwind {
+                            width : 18%;
+                        }
+                        .suzuki {
+                            width : 27.39%;
+                            margin-top : 6.92%;
+                            margin-left : 0;
+                        }
+                        .shangqi {
+                            width : 8.6%;
+                            margin-top : 6.92%;
+                        }
+                        .tongyongwuling {
+                            width : 9.24%;
+                            margin-top : 6.92%;
+                            margin-left : 0.32% 
+                        }
+                        .datong {
+                            width : 16.88%;
+                            margin-top : 6.92%;
+                            margin-left : 0.32% 
+                        }
+                        .roewe {
+                            width : 16.24%;
+                            margin-top : 6.92%;
+                            margin-left : 0.32% 
+                        }
+                        .mg {
+                            width : 16.4%;
+                            margin-top : 6.92%;
+                            margin-left : 0.32% 
+                        }
+                    }
+
+                    &.booth-4-1 {
+                        .bmw {
+                            width : 48.38%;
+                            margin-left : 0;
+                        }
+                        .acura {
+                            width : 27.12%;
+                        }
+                        .lincoln {
+                            width : 18.1%;
+                        }
+                        .infiniti {
+                            width : 32.8%;
+                            margin-top : 6.92%;
+                            margin-left : 0.32% 
+                        }
+                        .calson {
+                            width : 11.94%;
+                            margin-top : 6.92%;
+                        }
+                        .jaguar {
+                            width : 48.4%;
+                            margin-top : 6.92%;
+                        }
+                    }
+                    &.booth-5-1 {
+                        .cadillac {
+                            width : 35.35%;
+                            margin-left : 0;
+                        }
+                        .lexus {
+                            width : 29.14%;
+                        }
+                        .volvo {
+                            width : 28.98%;
+                        }
+                        .ds {
+                            width : 23.57%;
+                            margin-top : 6.92%;
+                            margin-left : 0.32% 
+                        }
+                        .fujianbenz {
+                            width : 15.29%;
+                            margin-top : 6.92%;
+                        }
+                        .benz {
+                            width : 54.4%;
+                            margin-top : 6.92%;
+                        }
+                    }
+                    &.booth-6 {
+                        width : 49.6%;
+                        .audi {
+                            width : 61.5%;
+                            margin-left : 0;
+                        }
+                        .skoda {
+                            width : 35.18%;
+                        }
+                        .volkswagen {
+                            width : 100%;
+                            margin-top : 6.92%;
+                            margin-left : 0.32% 
+                        }
+                    }
+                    &.booth-7 {
+                        width : 55.26%;
+                        li {
+                            margin-left : 4.58%;
+                        }
+                        .lamborghini {
+                            width : 19.98%;
+                            margin-left : 0;
+                        }
+                        .davidson {
+                            width : 16.44%;
+                        }
+                        .forum {
+                            width : 16.78%;
+                        }
+                        .safechair {
+                            width : 10.34%;
+                        }
+                        .patton {
+                            width : 17.46%;
+                        }
+                    }
+                }
+            }
         }
-
-
     }
 }
 
