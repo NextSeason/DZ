@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title></title>
+        <link rel="stylesheet" href="@@path.css/index.css" />
+        <link rel="stylesheet" href="@@path.css/airuize.css" />
+        <script src="@@path.js/preloadimages.js"></script>
+        <script>
+            ( function() {
+                PreloadImages.load( {
+                    list : [
+                        '@@path.images/tuan/next.png',
+                        '@@path.images/tuan/04tip.png',
+                        '@@path.images/tuan/04line.png',
+                        '@@path.images/tuan/04button.png',
+                        '@@path.images/airuize/04-1.jpg',
+                        '@@path.images/airuize/04-2.jpg',
+                        '@@path.images/airuize/04-3.jpg',
+                        '@@path.images/airuize/04-4.jpg',
+                        '@@path.images/airuize/04-5.jpg',
+                        '@@path.images/airuize/04-6.jpg',
+                        '@@path.images/airuize/04-7.jpg',
+                        '@@path.images/airuize/04-8.jpg'
+                    ],
+                    callback : function( state, data ) {
+                        var rate,
+                            el = document.getElementById( 'loading' );
+
+                        if( data.loaded.length === data.list.length ) {
+                            el.style.display = 'none';
+                            document.getElementById( 'page' ).style.display = 'block';
+                        } else {
+                            el.innerHTML = parseInt( data.loaded.length / data.list.length * 100) + '%';
+                        }
+                    }
+                } );
+            } )();
+        </script>
+    </head>
+    <body>
+        <div id="is-portrait" class="portrait">
+            <div class="rotation"></div>
+        </div>
+        <div id="is-landscape" class="landscape airuize">
+            <div id="loading">
+            </div>
+            <div id="page" class="pages tuan2">
+                <div class="top">
+                    <a href="@@host/airuize/1.html" class="bac"></a>
+                    <a href="###" class="menubutton"></a>
+                    <div class="pagetitle"></div>
+                </div>
+                <div class="title"></div>
+                <div class="slices-box">
+                    <div style="background-image:url( @@path.images/airuize/04-1.jpg )"></div>
+                    <div style="background-image:url( @@path.images/airuize/04-2.jpg )"></div>
+                    <div style="background-image:url( @@path.images/airuize/04-3.jpg )"></div>
+                    <div style="background-image:url( @@path.images/airuize/04-4.jpg )"></div>
+                    <div style="background-image:url( @@path.images/airuize/04-5.jpg )"></div>
+                    <div style="background-image:url( @@path.images/airuize/04-6.jpg )"></div>
+                    <div style="background-image:url( @@path.images/airuize/04-7.jpg )"></div>
+                    <div style="background-image:url( @@path.images/airuize/04-8.jpg )"></div>
+                </div>
+                <div class="tip"></div>
+                @@include( '../includes/menu.html' )
+                <div class="scroll-bar bg-contain">
+                    <div class="scroll-btn bg-contain"></div>
+                </div>
+                <a href="@@host/airuize/3.html" class="next bg-contain"></a>
+            </div>
+        </div>
+        <script src="@@path.js/zepto.min.js"></script>
+        <script src="@@path.js/index.js"></script>
+        <script>
+            ( function() {
+                $( '.scroll-btn' ).on( 'touchmove', function( e ) {
+                    e.preventDefault();
+                    var x = e.touches[ 0 ].pageX,
+                        offset = $( '.scroll-bar' ).offset(),
+                        originalX = offset.left,
+                        max = offset.width,
+                        s = x - originalX,
+                        n = max / 8;
+
+                    if( s > max || s < 0) return false;
+                    $( this ).css( 'left', s - 21 );
+
+                    $( '.slices-box div' ).hide();
+                    $( '.slices-box div' ).eq( Math.floor( s / n ) ).show();
+
+                } );
+            } )();
+        </script>
+    </body>
+</html>

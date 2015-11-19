@@ -1,0 +1,112 @@
+.pages.exp-cover {
+    background-image : url( @@path.images/exp-01bg.jpg );
+    .title {
+        width : 60.53%;
+        height : 34.02%;
+        margin : 8% auto 0;
+        background : url( @@path.images/exp-01title.png ) no-repeat center;
+        -webkit-background-size : contain;
+        background-size : contain;
+        -webkit-transform : scale( 0 );
+        transform : scale( 0 );
+        opacity : 0;
+        -webkit-transition : all 1s ease-in-out;
+        transition : all 1s ease-in-out;
+        &.show {
+            -webkit-transform : scale( 1 );
+            transform : scale( 1 );
+            opacity : 1;
+        }
+    }
+
+    .button-box {
+        width : 195px;
+        height : 37px;
+        margin : 13% auto 0; 
+        position : relative;
+        .arrows {
+            width : 13px;
+            height : 13px;
+            -webkit-background-size : contain;
+            background-size : contain;
+            display : block;
+            position : absolute;
+            top : 12px;
+            opacity : 0;
+            -webkit-animation-duration: 4s;
+            -webkit-animation-timing-function: ease;
+            -webkit-animation-delay: 0;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-backface-visibility: hidden;
+            &.show {
+                opacity : 1;
+            }
+            &.arrow-left {
+                background-image : url( @@path.images/tipL.png );
+                left : 7px;
+                -webkit-animation-name: 'shakeleft';
+            }
+            &.arrow-right {
+                background-image : url( @@path.images/tipR.png );
+                right : 7px;
+                -webkit-animation-name: 'shakeright';
+            }
+        }
+        .button {
+            display : block;
+            width : 142px;
+            height : 37px;
+            margin : 0 auto;
+            background : url( @@path.images/exp-01button.png );
+            -webkit-background-size : contain;
+            background-size : contain;
+            opacity : 0;
+            -webkit-transition : opacity 1s ease-in-out;
+            transition : opacity 1s ease-in-out;
+            &.show {
+                opacity : 1;
+            }
+        }
+    }
+    .bottom-line {
+        position : absolute;
+        bottom : 10px;
+        height : 30px;
+        width : 100%;
+        .logo {
+            width : 100px;
+            height : 30px;
+            background-image : url( @@path.images/logo.png );
+            -webkit-background-size : contain;
+            background-size : contain;
+            position : absolute;
+            left : 30px;
+            -webkit-transform : scale( 0 );
+            transform : scale( 0 );
+            -webkit-transition : all 1s ease-in-out;
+            transition : all 1s ease-in-out;
+            &.show {
+                -webkit-transform : scale( 1 );
+                transform : scale( 1 );
+            }
+        }
+        .bac2home {
+            width : 75px;
+            height : 30px;
+            background-image : url( @@path.images/bac2home.png );
+            -webkit-background-size : contain;
+            background-size : contain;
+            position : absolute;
+            right : 30px;
+            display : block;
+            -webkit-transform : scale( 0 );
+            transform : scale( 0 );
+            -webkit-transition : all 1s ease-in-out;
+            transition : all 1s ease-in-out;
+            &.show {
+                -webkit-transform : scale( 1 );
+                transform : scale( 1 );
+            }
+        }
+    }
+}

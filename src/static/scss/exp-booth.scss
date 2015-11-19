@@ -1,0 +1,472 @@
+.pages.exp-booth {
+    background-image : url( @@path.images/exp-bg.jpg );            
+    .pagetitle {
+        width : 90px;
+        background-image : url( @@path.images/exp-booth/03titleword.png );
+    }
+    .booth-nav {
+        position : absolute;
+        top : 30px;
+        bottom : 0;
+        display : -webkit-box;
+        display : box;
+
+        -webkit-box-orient : horizontal;
+        box-orient : horizontal;
+        -webkit-box-pack : center;
+        box-pack : center;
+        -webkit-box-align : center;
+        box-align : center;
+        a {
+            display : block;
+            width : 66px;
+            height : 33px;
+            background-repeat : no-repeat;
+            background-position : center;
+            -webkit-background-size : contain;
+            background-size : contain;
+        }
+        &.nav-left {
+            left : 0;
+        }
+        &.nav-right {
+            right : 0;
+        }
+    }
+    .booth-detail {
+        width : 100%;
+        height : calc( 100% - 33px );
+        margin-top : 33px; 
+        display : -webkit-box;
+        display : box;
+        -webkit-box-orient : horizontal;
+        box-orient : horizontal;
+
+        -webkit-box-pack : center;
+        box-pack : center;
+
+        -webkit-box-align : center;
+        box-align : center;
+
+        .boothes {
+            width : 58.80%;
+            background : rgba( 255, 255, 255, .3 );
+            padding : 2.99%;
+            -webkit-box-sizing : border-box;
+            box-sizing : border-box;
+            display : none;
+
+            li {
+                position : relative;
+                float : left;
+                margin-left : 3.18%;
+                font-size : 0;
+                a {
+                    display : block;
+                    img {
+                        width : 100%;
+                        height : auto;
+                    }
+                }
+                span.location-icon {
+                    width : 33px;
+                    height : 33px;
+                    position : absolute;
+                    top : -13px;
+                    left : calc( 50% - 16.5px );
+                    background : url( @@path.images/exp-booth/hallbutton.png ) no-repeat center; 
+                    background-size : contain;
+                }
+            }
+            &.booth-1-1 {
+                .kia {
+                    width : 48.5%;
+                    margin-left : 0;
+                }
+                .dongfengfengshen {
+                    width : 25.8%;
+                }
+                .soueast {
+                    width : 19.1%;
+                }
+                .mazda {
+                    width : 36.7%;
+                    margin-left : 0;
+                    margin-top : 6.92%;
+                }
+                .peugeot {
+                    width : 28.6%;
+                    margin-top : 6.92%;
+                }
+                .citroen {
+                    width : 28.34%;
+                    margin-top : 6.92%;
+                }
+            }
+            &.booth-2-1 {
+                .zhengzhourichan {
+                    width : 14.49%;
+                    margin-left : 0;
+                }
+                .subaru {
+                    width : 21.02%;
+                }
+                .qoros {
+                    width : 18.79%;
+                }
+                .renault {
+                    width : 35.99%;
+                }
+                .shuanghuan {
+                    width : 11.6%;
+                    margin-top : 6.92%;
+                    margin-left : 0;
+                }
+                .ford {
+                    width : 71.7%;
+                    margin-top : 6.92%;
+                }
+                .title {
+                    width : 10.3%;
+                    margin-top : 6.92%;
+                }
+            }
+            &.booth-3-1 {
+                .yiqi {
+                    width : 24.85%;
+                    margin-left : 0;
+                }
+                .changan2 {
+                    width : 36.94%;
+                }
+                .changan {
+                    width : 13.45%;
+                    margin-left : 0.32% 
+                }
+                .landwind {
+                    width : 18%;
+                }
+                .suzuki {
+                    width : 27.39%;
+                    margin-top : 6.92%;
+                    margin-left : 0;
+                }
+                .shangqi {
+                    width : 8.6%;
+                    margin-top : 6.92%;
+                }
+                .tongyongwuling {
+                    width : 9.24%;
+                    margin-top : 6.92%;
+                    margin-left : 0.32% 
+                }
+                .datong {
+                    width : 16.88%;
+                    margin-top : 6.92%;
+                    margin-left : 0.32% 
+                }
+                .roewe {
+                    width : 16.24%;
+                    margin-top : 6.92%;
+                    margin-left : 0.32% 
+                }
+                .mg {
+                    width : 16.4%;
+                    margin-top : 6.92%;
+                    margin-left : 0.32% 
+                }
+            }
+            &.booth-4-1 {
+                .bmw {
+                    width : 48.38%;
+                    margin-left : 0;
+                }
+
+                .acura {
+                    width : 27.12%;
+                }
+                .lincoln {
+                    width : 18.1%;
+                }
+                .infiniti {
+                    width : 32.8%;
+                    margin-top : 6.92%;
+                    margin-left : 0.32% 
+                }
+                .calson {
+                    width : 11.94%;
+                    margin-top : 6.92%;
+                }
+                .jaguar {
+                    width : 48.4%;
+                    margin-top : 6.92%;
+                }
+            }
+            &.booth-5-1 {
+                .cadillac {
+                    width : 35.35%;
+                    margin-left : 0;
+                }
+                .lexus {
+                    width : 29.14%;
+                }
+                .volvo {
+                    width : 28.98%;
+                }
+                .ds {
+                    width : 23.57%;
+                    margin-top : 6.92%;
+                    margin-left : 0.32% 
+                }
+                .fujianbenz {
+                    width : 15.29%;
+                    margin-top : 6.92%;
+                }
+                .benz {
+                    width : 54.4%;
+                    margin-top : 6.92%;
+                }
+            }
+            &.booth-6 {
+                width : 49.6%;
+                .audi {
+                    width : 61.5%;
+                    margin-left : 0;
+                }
+                .skoda {
+                    width : 35.18%;
+                }
+                .volkswagen {
+                    width : 100%;
+                    margin-top : 6.92%;
+                    margin-left : 0.32% 
+                }
+            }         
+            &.booth-7 {
+                width : 55.26%;
+                li {
+                    margin-left : 4.58%;
+                }
+                .lamborghini {
+                    width : 19.98%;
+                    margin-left : 0;
+                }
+                .davidson {
+                    width : 16.44%;
+                }
+                .forum {
+                    width : 16.78%;
+                }
+                .safechair {
+                    width : 10.34%;
+                }
+                .patton {
+                    width : 17.46%;
+                }
+            }
+            &.booth-8 {
+                $width : 523;
+                $height : 412;
+                width : percentage( $width / 1135 );
+                li {
+                    margin-left : percentage( 20 / $width );
+                }
+                .porsche {
+                    width : percentage( 111 / $width ); 
+                    margin-left : 0;
+                }
+                .ferrari {
+                    width : percentage( 116 / $width );
+                }
+                .xingkete {
+                    width : percentage( 65 / $width ); 
+                }
+                .rr {
+                    width : percentage( 86 / $width );
+                }
+                .armadillo {
+                    width : percentage( 65 / $width );
+                }
+                .speedauto {
+                    width : percentage( 128 / $width );
+                    margin-top : percentage( 27 / $height );
+                    margin-left : percentage( 83 / $width );
+                }
+                .astonmartin {
+                    width : percentage( 128 / $width );
+                    margin-top : percentage( 27 / $height );
+                    margin-left : percentage( 2 / $width );
+                }
+                .maserati {
+                    width : percentage( 111 / $width );
+                    margin-left : 0;
+                    margin-top : percentage( 27 / $height );
+                }
+                .bentley {
+                    width : percentage( 99 / $width );
+                    margin-top : percentage( 27 / $height );
+                    margin-left : percentage( 53 / $width );
+                }
+                .zoemo {
+                    width : percentage( 71 / $width );
+                    margin-top : percentage( 27 / $height );
+                }
+                .saleen {
+                    width : percentage( 63 / $width );
+                    margin-top : percentage( 27 / $height );
+                }
+                .gmc {
+                    width : percentage( 65 / $width );
+                    margin-top : percentage( 27 / $height );
+                }
+            }
+            &.booth-1-2 {
+                $width : 630;
+                $height : 412;
+                width : percentage( $width / 1135 );
+                .wanlitire {
+                    width : percentage( 61 / $width ); 
+                    margin-left : 0;
+                }
+                .jac {
+                    width : percentage( 180 / $width );
+                }
+                .hyundai {
+                    width : percentage( 347 / $width ); 
+                }
+                .shangzhe {
+                    width : percentage( 61 / $width );
+                    margin-left : 0;
+                    margin-top : percentage( 37 / $height );
+                }
+                .huasai {
+                    width : percentage( 89 / $width );
+                    margin-top : percentage( 37 / $height );
+                }
+                .tengshi {
+                    width : percentage( 91 / $width );
+                    margin-top : percentage( 37 / $height );
+                }
+                .beiqi {
+                    width : percentage( 327 / $width );
+                    margin-top : percentage( 37 / $height );
+                }
+            }
+            &.booth-2-2 {
+                $width : 628;
+                $height : 412;
+                width : percentage( $width / 1135 );
+                li {
+                    margin-left : percentage( 2 / $width );
+                }
+                .gag {
+                    width : percentage( 294 / $width ); 
+                    margin-left : 0;
+                }
+                .toyota {
+                    width : percentage( 168 / $width );
+                }
+                .mitsubishi {
+                    width : percentage( 161 / $width ); 
+                }
+                .gacfca {
+                    width : percentage( 144 / $width );
+                    margin-left : 0;
+                    margin-top : percentage( 37 / $height );
+                }
+                .guangqihonda {
+                    width : percentage( 179 / $width );
+                    margin-top : percentage( 37 / $height );
+                }
+                .honda {
+                    width : percentage( 81 / $width );
+                    margin-top : percentage( 37 / $height );
+                }
+                .dongfenghonda {
+                    width : percentage( 218 / $width );
+                    margin-top : percentage( 37 / $height );
+                }
+            }
+            &.booth-3-2 {
+                $width : 628;
+                $height : 412;
+                width : percentage( $width / 1135 );
+                .zhonghua {
+                    width : percentage( 201 / $width ); 
+                    margin-left : 0;
+                }
+                .luxgen {
+                    width : percentage( 119 / $width );
+                }
+                .buick {
+                    width : percentage( 268 / $width ); 
+                }
+                .chery {
+                    width : percentage( 201 / $width );
+                    margin-left : 0;
+                    margin-top : percentage( 37 / $height );
+                }
+                .lifan {
+                    width : percentage( 119 / $width );
+                    margin-top : percentage( 37 / $height );
+                }
+                .chevrolet {
+                    width : percentage( 268 / $width );
+                    margin-top : percentage( 37 / $height );
+                }
+            }
+            &.booth-4-2 {
+                $width : 628;
+                $height : 412;
+                width : percentage( $width / 1135 );
+                .geely {
+                    width : percentage( 196 / $width ); 
+                    margin-left : 0;
+                }
+                .haval {
+                    width : percentage( 295 / $width );
+                }
+                .foton {
+                    width : percentage( 97 / $width ); 
+                }
+                .bridgestone {
+                    width : percentage( 77 / $width );
+                    margin-left : 0;
+                    margin-top : percentage( 37 / $height );
+                }
+                .qichen {
+                    width : percentage( 149 / $width );
+                    margin-top : percentage( 37 / $height );
+                }
+                .nissan {
+                    width : percentage( 362 / $width );
+                    margin-top : percentage( 37 / $height );
+                }
+            }
+            &.booth-5-2 {
+                $width : 628;
+                $height : 412;
+                width : percentage( $width / 1135 );
+                .byd {
+                    width : percentage( 236 / $width ); 
+                    margin-left : 0;
+                }
+                .fengxing {
+                    width : percentage( 170 / $width );
+                }
+                .yiche {
+                    width : percentage( 182 / $width ); 
+                }
+                .jmc {
+                    width : percentage( 161 / $width );
+                    margin-left : 0;
+                    margin-top : percentage( 37 / $height );
+                }
+                .toyota {
+                    width : percentage( 447 / $width );
+                    margin-top : percentage( 37 / $height );
+                }
+            }
+        }
+    }
+}

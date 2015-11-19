@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title></title>
+        <link rel="stylesheet" href="@@path.css/index.css" />
+        <link rel="stylesheet" href="@@path.css/airuize.css" />
+        <link rel="stylesheet" href="@@path.css/fullview.css" />
+    </head>
+    <body>
+        <div id="is-portrait" class="portrait">
+            <div class="rotation"></div>
+        </div>
+        <div id="is-landscape" class="landscape airuize">
+            <div class="pages tuan4">
+                <div class="top">
+                    <a href="@@host/airuize/3.html" class="bac"></a>
+                    <a href="###" class="menubutton"></a>
+                    <div class="pagetitle"></div>
+                </div>
+                <div class="pictures-box">
+                    <div class="picture pic-1" style="background-image:url(@@path.images/airuize/08-1.jpg)"></div>
+                    <div class="picture pic-2" style="background-image:url(@@path.images/airuize/08-2.jpg)"></div>
+                    <div class="picture pic-3" style="background-image:url(@@path.images/airuize/08-3.jpg)"></div>
+                    <div class="picture pic-4" style="background-image:url(@@path.images/airuize/08-4.jpg)"></div>
+                    <div class="picture pic-5" style="background-image:url(@@path.images/airuize/08-5.jpg)"></div>
+                    <div class="picture pic-6" style="background-image:url(@@path.images/airuize/08-6.jpg)"></div>
+                    <div class="picture pic-7" style="background-image:url(@@path.images/airuize/08-7.jpg)"></div>
+                    <div class="picture pic-8" style="background-image:url(@@path.images/airuize/08-8.jpg)"></div>
+                    <div class="picture pic-9" style="background-image:url(@@path.images/airuize/08-9.jpg)"></div>
+                </div>
+                @@include( '../includes/menu.html' )
+            </div>
+        </div>
+        <script src="@@path.js/zepto.min.js"></script>
+        <script src="@@path.js/index.js"></script>
+        <script src="@@path.js/three.min.js"></script>
+        <script src="@@path.js/DeviceOrientationControls.js"></script>
+        <script src="@@path.js/CSS3DRenderer.js"></script>
+        <script>
+            window.sides = [ {
+		        url: '@@path.images/airuize/4.jpg',
+		        position: [ -512, 0, 0 ],
+		        rotation: [ 0, Math.PI / 2, 0 ]
+	        }, {
+		        url: '@@path.images/airuize/2.jpg',
+		        position: [ 512, 0, 0 ],
+		        rotation: [ 0, -Math.PI / 2, 0 ]
+	        }, {
+		        url: '@@path.images/airuize/5.jpg',
+		        position: [ 0,  512, 0 ],
+		        rotation: [ Math.PI / 2, 0, Math.PI / 2 ]
+	        }, {
+		        url: '@@path.images/airuize/6.jpg',
+		        position: [ 0, -512, 0 ],
+		        rotation: [ -Math.PI / 2, 0, -Math.PI / 2 ]
+	        }, {
+		        url: '@@path.images/airuize/3.jpg',
+		        position: [ 0, 0,  512 ],
+		        rotation: [ 0, Math.PI, 0 ]
+	        }, {
+		        url: '@@path.images/airuize/1.jpg',
+		        position: [ 0, 0, -512 ],
+		        rotation: [ 0, 0, 0 ]
+	        } ];
+
+            window.points = [ {
+                coords : [ 220, 470 ],
+                target : 1,
+                picture : 1
+            }, {
+                coords : [ 70, 550 ],
+                target : 1,
+                picture : 2
+            }, {
+                coords : [ 510, 590 ],
+                target : 1,
+                picture : 6
+            }, {
+                coords : [ 100, 680 ],
+                target : 1,
+                picture : 3
+            }, {
+                coords : [ 490, 690 ],
+                target : 1,
+                picture : 4
+            }, {
+                coords : [ 600, 210 ],
+                target : 1,
+                picture : 7
+            }, {
+                coords : [ 500, 0 ],
+                target : 1,
+                picture : 8
+            }, {
+                coords : [ 150, 940 ],
+                target : 1,
+                picture : 9
+            } ];
+        </script>
+        <script src="@@path.js/fullview.js"></script>
+    </body>
+</html>

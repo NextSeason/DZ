@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no,width=device-width" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title></title>
+        <link rel="stylesheet" href="@@path.css/index.css" />
+        <link rel="stylesheet" href="@@path.css/airuize.css" />
+    </head>
+    <body>
+        <div id="is-portrait" class="portrait">
+            <div class="rotation"></div>
+        </div>
+        <div id="is-landscape" class="landscape airuize">
+            <div class="pages tuan">
+                <div class="top">
+                    <a href="@@host/list.html" class="bac"></a>
+                    <a href="###" class="menubutton"></a>
+                    <div class="pagetitle"></div>
+                </div>
+                <div class="title"></div>
+                <div class="detail-button-box">
+                    <b class="arrows arrow-left"></b>
+                    <b class="arrows arrow-right"></b>
+                    <a href="@@host/airuize/2.html" class="button"></a>
+                </div>
+                @@include( '../includes/menu.html' )
+            </div>
+        </div>
+        <script src="@@path.js/zepto.min.js"></script>
+        <script src="@@path.js/index.js"></script>
+        <script>
+            $().ready( function() {
+                $( '.pages.tuan' ).addClass( 'show' );
+            } );
+        </script>
+    </body>
+</html>

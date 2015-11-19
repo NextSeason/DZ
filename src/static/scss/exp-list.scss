@@ -1,0 +1,105 @@
+.pages.exp-list {
+    background-image : url( @@path.images/exp-bg.jpg );            
+    .pagetitle {
+        width : 75px;
+        background-image : url( @@path.images/exp-list/02titleword.png );
+    }
+    .car-list-area {
+        margin-top : 5%;
+        margin-left : 25px;
+        width : 100%;
+        overflow : hidden;
+        .inner {
+            width : 300%;
+            -webkit-transition : all .6s ease-in-out;
+            transition : all .6s ease-in-out;
+        }
+        .list-page {
+            float : left;
+        }
+        ul {
+            width : 100%;
+            position : relative;
+            li {
+                float : left;
+                margin : 15px 0 0;
+                width : 33.3%; 
+                position : relative;
+                perspective : 1000px;
+                a.anchor {
+                    display : block;
+                    position : absolute;
+                    background : rgba( 0, 0, 0, 0 );
+                    width : 87%;
+                    height : 38%;
+                    top : 4%;
+                    left : 4%;
+                    -webkit-transform : rotateX( 49deg ) rotateY( -8deg ) rotateZ( 47deg );
+                    &.anchor-bottom {
+                        top : 40%;
+                    }
+                    &.anchor-6 {
+                        width : 74%;
+                        height : 33%;
+                        top : 34%;
+                        left : 9%;
+                    }
+                    &.anchor-7 {
+                        width : 45%;
+                        height : 34%;
+                        top : 34%;
+                        left : 26%;
+                    }
+                    &.anchor-8 {
+                        width : 72%;
+                        height : 34%;
+                        top : 34%;
+                        left : 11%;
+                    }
+                }
+                div {
+                    width : 100%;
+                    -webkit-background-size : contain;
+                    background-size : contain;
+                    background-position : center;
+                    img {
+                        width : 100%;
+                        height : auto;
+                    }
+                }
+            }
+        }
+    }
+    .scroll-bar {
+        width : 202px;
+        height : 4px;
+        font-size : 0;
+        margin : 0 auto;
+        position : relative;
+        background : url( @@path.images/tipbg.png );
+        -webkit-background-size : contain;
+        background-size : contain;
+        .tiplight {
+            display : block;
+            width : 43px;
+            height : 4px;
+            position : absolute;
+            top : 0;
+            left : 0;
+            font-size : 0;
+            background : url( @@path.images/tiplight.png );
+            -webkit-background-size : contain;
+            background-size : contain;
+            -webkit-transition : left 1s ease-in-out;
+            transition : left 1s ease-in-out;
+        }
+    }
+    .scroll-tip {
+        width : 180px;
+        height : 10px;
+        margin : 5px auto 0;
+        background : url( @@path.images/exp-list/02tipword.png );
+        -webkit-background-size : contain;
+        background-size : contain;
+    }
+}

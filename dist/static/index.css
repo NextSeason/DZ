@@ -111,7 +111,7 @@ textarea, input, a:link, .btns, p, div {
 #is-portrait .rotation {
   width: 300px;
   height: 265px;
-  background: url(http://45.56.91.160/static/images/rotation.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/rotation.png);
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -172,7 +172,7 @@ textarea, input, a:link, .btns, p, div {
   height: 33px;
   position: absolute;
   left: 30px;
-  background: url(http://45.56.91.160/static/images/bac.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/bac.png);
   background-size: contain;
 }
 /* line 111, ../../src/static/index.scss */
@@ -182,7 +182,7 @@ textarea, input, a:link, .btns, p, div {
   height: 33px;
   position: absolute;
   right: 30px;
-  background: url(http://45.56.91.160/static/images/menubutton.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/menubutton.png);
   background-size: contain;
 }
 /* line 120, ../../src/static/index.scss */
@@ -239,18 +239,18 @@ textarea, input, a:link, .btns, p, div {
   position: absolute;
   right: 25px;
   bottom: 14px;
-  background-image: url(http://45.56.91.160/static/images/tuan/next.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/next.png);
 }
 /* line 176, ../../src/static/index.scss */
 #is-landscape .pages.cover {
-  background-image: url(http://45.56.91.160/static/images/01bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/01bg.jpg);
 }
 /* line 178, ../../src/static/index.scss */
 #is-landscape .pages.cover .title {
   width: 285px;
   height: 125px;
   margin: 6% auto 0;
-  background: url(http://45.56.91.160/static/images/01title.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/01title.png);
   -webkit-background-size: contain;
   background-size: contain;
   -webkit-transform: scale(0);
@@ -294,13 +294,13 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 219, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .arrows.arrow-left {
-  background-image: url(http://45.56.91.160/static/images/tipL.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipL.png);
   left: 7px;
   -webkit-animation-name: 'shakeleft';
 }
 /* line 224, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .arrows.arrow-right {
-  background-image: url(http://45.56.91.160/static/images/tipR.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipR.png);
   right: 7px;
   -webkit-animation-name: 'shakeright';
 }
@@ -310,7 +310,7 @@ textarea, input, a:link, .btns, p, div {
   width: 142px;
   height: 37px;
   margin: 0 auto;
-  background: url(http://45.56.91.160/static/images/01button.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/01button.png);
   -webkit-background-size: contain;
   background-size: contain;
   opacity: 0;
@@ -332,7 +332,7 @@ textarea, input, a:link, .btns, p, div {
 #is-landscape .pages.cover .bottom-line .logo {
   width: 100px;
   height: 30px;
-  background-image: url(http://45.56.91.160/static/images/logo.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/logo.png);
   -webkit-background-size: contain;
   background-size: contain;
   position: absolute;
@@ -351,7 +351,7 @@ textarea, input, a:link, .btns, p, div {
 #is-landscape .pages.cover .bottom-line .bac2home {
   width: 75px;
   height: 30px;
-  background-image: url(http://45.56.91.160/static/images/bac2home.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/bac2home.png);
   -webkit-background-size: contain;
   background-size: contain;
   position: absolute;
@@ -369,45 +369,46 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 289, ../../src/static/index.scss */
 #is-landscape .pages.list {
-  background-image: url(http://45.56.91.160/static/images/list/02bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/list/02bg.jpg);
 }
 /* line 291, ../../src/static/index.scss */
 #is-landscape .pages.list .pagetitle {
   width: 75px;
-  background-image: url(http://45.56.91.160/static/images/word.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/word.png);
 }
 /* line 295, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area {
   margin-top: 35px;
   width: 100%;
+  min-height: 75%;
   overflow: hidden;
 }
-/* line 299, ../../src/static/index.scss */
+/* line 300, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area .inner {
   width: 300%;
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
-/* line 304, ../../src/static/index.scss */
+/* line 305, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area .list-page {
   float: left;
 }
-/* line 307, ../../src/static/index.scss */
+/* line 308, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area ul {
   width: 90%;
   margin: 0 auto;
 }
-/* line 310, ../../src/static/index.scss */
+/* line 311, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area ul li {
   float: left;
   margin: 15px 0 0 4%;
   width: 22%;
 }
-/* line 314, ../../src/static/index.scss */
+/* line 315, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area ul li:nth-child(4n + 1) {
   margin-left: 0;
 }
-/* line 317, ../../src/static/index.scss */
+/* line 318, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area ul li a {
   display: block;
   width: 100%;
@@ -415,23 +416,23 @@ textarea, input, a:link, .btns, p, div {
   background-size: contain;
   background-position: center;
 }
-/* line 323, ../../src/static/index.scss */
+/* line 324, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area ul li a img {
   width: 100%;
   height: auto;
 }
-/* line 331, ../../src/static/index.scss */
+/* line 332, ../../src/static/index.scss */
 #is-landscape .pages.list .scroll-bar {
   width: 202px;
   height: 4px;
   font-size: 0;
   margin: 10px auto 0;
   position: relative;
-  background: url(http://45.56.91.160/static/images/tipbg.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipbg.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 340, ../../src/static/index.scss */
+/* line 341, ../../src/static/index.scss */
 #is-landscape .pages.list .scroll-bar .tiplight {
   display: block;
   width: 43px;
@@ -440,58 +441,58 @@ textarea, input, a:link, .btns, p, div {
   top: 0;
   left: 0;
   font-size: 0;
-  background: url(http://45.56.91.160/static/images/tiplight.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tiplight.png);
   -webkit-background-size: contain;
   background-size: contain;
   -webkit-transition: left 1s ease-in-out;
   transition: left 1s ease-in-out;
 }
-/* line 355, ../../src/static/index.scss */
+/* line 356, ../../src/static/index.scss */
 #is-landscape .pages.list .scroll-tip {
   width: 95px;
   height: 10px;
   margin: 10px auto 0;
-  background: url(http://45.56.91.160/static/images/tipword.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipword.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 364, ../../src/static/index.scss */
+/* line 365, ../../src/static/index.scss */
 #is-landscape .pages.tuan {
-  background-image: url(http://45.56.91.160/static/images/tuan/03bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/03bg.jpg);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   opacity: 0;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-/* line 371, ../../src/static/index.scss */
+/* line 372, ../../src/static/index.scss */
 #is-landscape .pages.tuan.show {
   -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
-/* line 376, ../../src/static/index.scss */
+/* line 377, ../../src/static/index.scss */
 #is-landscape .pages.tuan .pagetitle {
   width: 110px;
-  background-image: url(http://45.56.91.160/static/images/tuan/carword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
 }
-/* line 380, ../../src/static/index.scss */
+/* line 381, ../../src/static/index.scss */
 #is-landscape .pages.tuan .title {
   width: 200px;
   height: 140px;
   margin: 35px 0 0 30px;
-  background-image: url(http://45.56.91.160/static/images/tuan/03title.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/03title.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 388, ../../src/static/index.scss */
+/* line 389, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box {
   width: 160px;
   height: 55px;
   position: relative;
   margin: 42px 0 0 36px;
 }
-/* line 393, ../../src/static/index.scss */
+/* line 394, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .arrows {
   width: 8px;
   height: 8px;
@@ -501,51 +502,51 @@ textarea, input, a:link, .btns, p, div {
   position: absolute;
   top: 24px;
 }
-/* line 401, ../../src/static/index.scss */
+/* line 402, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .arrows.arrow-left {
-  background-image: url(http://45.56.91.160/static/images/tipL-orange.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipL-orange.png);
   left: 7px;
 }
-/* line 405, ../../src/static/index.scss */
+/* line 406, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .arrows.arrow-right {
-  background-image: url(http://45.56.91.160/static/images/tipR-orange.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipR-orange.png);
   right: 7px;
 }
-/* line 410, ../../src/static/index.scss */
+/* line 411, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .button {
   display: block;
   width: 120px;
   height: 55px;
   margin: 0 auto;
-  background: url(http://45.56.91.160/static/images/360button.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/360button.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 422, ../../src/static/index.scss */
+/* line 423, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 {
   display: none;
-  /* background-image : url( http://45.56.91.160/static/images/tuan/04-1.jpg ); */
+  /* background-image : url( http://192.168.2.103:8099/DZ/dist/static/images/tuan/04-1.jpg ); */
 }
-/* line 425, ../../src/static/index.scss */
+/* line 426, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 .pagetitle {
   width: 110px;
-  background-image: url(http://45.56.91.160/static/images/tuan/carword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
 }
-/* line 429, ../../src/static/index.scss */
+/* line 430, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 .tip {
   width: 152px;
   height: 37px;
   margin: 50px 0 0 30px;
-  background-image: url(http://45.56.91.160/static/images/tuan/04tip.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04tip.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 437, ../../src/static/index.scss */
+/* line 438, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 .slices-box {
   width: 100%;
   height: 100%;
 }
-/* line 440, ../../src/static/index.scss */
+/* line 441, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 .slices-box div {
   width: 100%;
   height: 100%;
@@ -553,51 +554,51 @@ textarea, input, a:link, .btns, p, div {
   -webkit-background-size: cover;
   background-size: cover;
 }
-/* line 448, ../../src/static/index.scss */
+/* line 449, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 .scroll-bar {
   width: 340px;
   height: 11px;
   font-size: 0;
   position: fixed;
-  background-image: url(http://45.56.91.160/static/images/tuan/04line.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04line.png);
   bottom: 24px;
   left: 25%;
 }
-/* line 456, ../../src/static/index.scss */
+/* line 457, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 .scroll-bar .scroll-btn {
   width: 53px;
   height: 53px;
   font-size: 0;
   position: absolute;
-  background-image: url(http://45.56.91.160/static/images/tuan/04button.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04button.png);
   top: -21px;
   left: -21px;
 }
-/* line 468, ../../src/static/index.scss */
+/* line 469, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 {
-  background-image: url(http://45.56.91.160/static/images/tuan/05bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/05bg.jpg);
 }
-/* line 470, ../../src/static/index.scss */
+/* line 471, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .pagetitle {
   width: 110px;
-  background-image: url(http://45.56.91.160/static/images/tuan/carword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
 }
-/* line 474, ../../src/static/index.scss */
+/* line 475, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .img-list-area {
   margin: 40px auto 0;
 }
-/* line 476, ../../src/static/index.scss */
+/* line 477, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .img-list-area ul {
   width: 97.37%;
   margin: 0 auto 15px;
 }
-/* line 479, ../../src/static/index.scss */
+/* line 480, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .img-list-area ul li {
   float: left;
   width: 25%;
   margin-top: 5px;
 }
-/* line 483, ../../src/static/index.scss */
+/* line 484, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .img-list-area ul li a {
   display: block;
   width: 89.29%;
@@ -608,18 +609,18 @@ textarea, input, a:link, .btns, p, div {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 492, ../../src/static/index.scss */
+/* line 493, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .img-list-area ul li a img {
   width: 100%;
 }
-/* line 499, ../../src/static/index.scss */
+/* line 500, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .tip {
   width: 75px;
   height: 10px;
-  background-image: url(http://45.56.91.160/static/images/tuan/05tip.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/05tip.png);
   margin: 10px auto;
 }
-/* line 505, ../../src/static/index.scss */
+/* line 506, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer {
   position: fixed;
   top: 0;
@@ -635,7 +636,7 @@ textarea, input, a:link, .btns, p, div {
   background-size: cover;
   display: none;
 }
-/* line 519, ../../src/static/index.scss */
+/* line 520, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item {
   width: 100%;
   height: 100%;
@@ -646,7 +647,7 @@ textarea, input, a:link, .btns, p, div {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 528, ../../src/static/index.scss */
+/* line 529, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item .center-helper {
   width: 100%;
   height: 100%;
@@ -657,188 +658,209 @@ textarea, input, a:link, .btns, p, div {
   -webkit-box-align: center;
   box-align: center;
 }
-/* line 540, ../../src/static/index.scss */
+/* line 541, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item .inner {
   width: 100%;
 }
-/* line 543, ../../src/static/index.scss */
+/* line 544, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item .txt,
 #is-landscape .pages.tuan3 .big-pic-layer .item .back-btn,
 #is-landscape .pages.tuan3 .big-pic-layer .item .img {
   display: block;
 }
-/* line 547, ../../src/static/index.scss */
+/* line 548, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item .txt img,
 #is-landscape .pages.tuan3 .big-pic-layer .item .back-btn img,
 #is-landscape .pages.tuan3 .big-pic-layer .item .img img {
   width: 100%;
   height: auto;
 }
-/* line 552, ../../src/static/index.scss */
+/* line 553, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-1 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-1.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-1.jpg);
 }
-/* line 554, ../../src/static/index.scss */
+/* line 555, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-1 .inner {
   margin-left: 7.8%;
 }
-/* line 556, ../../src/static/index.scss */
+/* line 557, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-1 .inner .txt {
   width: 29.02%;
 }
-/* line 559, ../../src/static/index.scss */
+/* line 560, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-1 .inner .back-btn {
   width: 15.26%;
   margin-top: 67px;
 }
-/* line 565, ../../src/static/index.scss */
+/* line 566, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-2 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-2.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-2.jpg);
 }
-/* line 567, ../../src/static/index.scss */
+/* line 568, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-2 .inner {
   margin-left: 7.8%;
 }
-/* line 569, ../../src/static/index.scss */
+/* line 570, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-2 .inner .txt {
   width: 21.58%;
 }
-/* line 572, ../../src/static/index.scss */
+/* line 573, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-2 .inner .back-btn {
   width: 15.26%;
   margin-top: 34px;
 }
-/* line 578, ../../src/static/index.scss */
+/* line 579, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-3 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-3.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-3.jpg);
 }
-/* line 580, ../../src/static/index.scss */
+/* line 581, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-3 .inner {
   margin: 0 auto;
   width: 85.44%;
   position: relative;
 }
-/* line 585, ../../src/static/index.scss */
+/* line 586, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-3 .img {
   width: 62%;
   float: left;
 }
-/* line 589, ../../src/static/index.scss */
+/* line 590, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-3 .txt {
   float: right;
   width: 36.76%;
 }
-/* line 593, ../../src/static/index.scss */
+/* line 594, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-3 .back-btn {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 17.86%;
 }
-/* line 600, ../../src/static/index.scss */
+/* line 601, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-4 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-4.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-4.jpg);
 }
-/* line 602, ../../src/static/index.scss */
+/* line 603, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-4 .inner {
   margin-left: 7.8%;
 }
-/* line 604, ../../src/static/index.scss */
+/* line 605, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-4 .inner .txt {
   width: 23.77%;
 }
-/* line 607, ../../src/static/index.scss */
+/* line 608, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-4 .inner .back-btn {
   width: 15.26%;
   margin-top: 34px;
 }
-/* line 613, ../../src/static/index.scss */
+/* line 614, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-5 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-5.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-5.jpg);
 }
-/* line 615, ../../src/static/index.scss */
+/* line 616, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-5 .inner {
   margin-left: 7.8%;
 }
-/* line 617, ../../src/static/index.scss */
+/* line 618, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-5 .inner .txt {
   width: 22.19%;
 }
-/* line 620, ../../src/static/index.scss */
+/* line 621, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-5 .inner .back-btn {
   width: 15.26%;
   margin-top: 34px;
 }
-/* line 626, ../../src/static/index.scss */
+/* line 627, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-6 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-6.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-6.jpg);
 }
-/* line 628, ../../src/static/index.scss */
+/* line 629, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-6 .inner {
   height: 100%;
 }
-/* line 631, ../../src/static/index.scss */
+/* line 632, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-6 .txt {
   width: 39.3%;
   position: absolute;
   right: 3.95%;
   bottom: 19.45%;
 }
-/* line 637, ../../src/static/index.scss */
+/* line 638, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-6 .back-btn {
   width: 15.26%;
   position: absolute;
   left: 7.8%;
   bottom: 9.45%;
 }
-/* line 644, ../../src/static/index.scss */
+/* line 645, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-7 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-7.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-7.jpg);
 }
-/* line 646, ../../src/static/index.scss */
+/* line 647, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-7 .inner {
   margin-left: 7.8%;
 }
-/* line 648, ../../src/static/index.scss */
+/* line 649, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-7 .inner .txt {
   width: 29.12%;
 }
-/* line 651, ../../src/static/index.scss */
+/* line 652, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-7 .inner .back-btn {
   width: 15.26%;
   margin-top: 34px;
 }
-/* line 657, ../../src/static/index.scss */
+/* line 658, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-8 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-8.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-8.jpg);
 }
-/* line 659, ../../src/static/index.scss */
+/* line 660, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-8 .inner {
   margin-left: 7.8%;
 }
-/* line 661, ../../src/static/index.scss */
+/* line 662, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-8 .inner .txt {
   width: 80.96%;
 }
-/* line 664, ../../src/static/index.scss */
+/* line 665, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-8 .inner .back-btn {
   width: 15.26%;
   margin-top: 34px;
 }
-/* line 673, ../../src/static/index.scss */
+/* line 674, ../../src/static/index.scss */
 #is-landscape .pages.tuan4 {
   background: #000;
 }
 /* line 676, ../../src/static/index.scss */
-#is-landscape .pages.exp-cover {
-  background-image: url(http://45.56.91.160/static/images/exp-01bg.jpg);
+#is-landscape .pages.tuan4 .pictures-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
 }
-/* line 678, ../../src/static/index.scss */
+/* line 686, ../../src/static/index.scss */
+#is-landscape .pages.tuan4 .pictures-box .picture {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-size: contain;
+}
+/* line 1, ../../src/static/scss/exp-cover.scss */
+#is-landscape .pages.exp-cover {
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-01bg.jpg);
+}
+/* line 3, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .title {
   width: 60.53%;
   height: 34.02%;
   margin: 8% auto 0;
-  background: url(http://45.56.91.160/static/images/exp-01title.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-01title.png) no-repeat center;
   -webkit-background-size: contain;
   background-size: contain;
   -webkit-transform: scale(0);
@@ -847,20 +869,20 @@ textarea, input, a:link, .btns, p, div {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-/* line 690, ../../src/static/index.scss */
+/* line 15, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .title.show {
   -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
-/* line 697, ../../src/static/index.scss */
+/* line 22, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .button-box {
   width: 195px;
   height: 37px;
   margin: 13% auto 0;
   position: relative;
 }
-/* line 702, ../../src/static/index.scss */
+/* line 27, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .button-box .arrows {
   width: 13px;
   height: 13px;
@@ -876,51 +898,51 @@ textarea, input, a:link, .btns, p, div {
   -webkit-animation-iteration-count: infinite;
   -webkit-backface-visibility: hidden;
 }
-/* line 716, ../../src/static/index.scss */
+/* line 41, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .button-box .arrows.show {
   opacity: 1;
 }
-/* line 719, ../../src/static/index.scss */
+/* line 44, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .button-box .arrows.arrow-left {
-  background-image: url(http://45.56.91.160/static/images/tipL.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipL.png);
   left: 7px;
   -webkit-animation-name: 'shakeleft';
 }
-/* line 724, ../../src/static/index.scss */
+/* line 49, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .button-box .arrows.arrow-right {
-  background-image: url(http://45.56.91.160/static/images/tipR.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipR.png);
   right: 7px;
   -webkit-animation-name: 'shakeright';
 }
-/* line 730, ../../src/static/index.scss */
+/* line 55, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .button-box .button {
   display: block;
   width: 142px;
   height: 37px;
   margin: 0 auto;
-  background: url(http://45.56.91.160/static/images/exp-01button.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-01button.png);
   -webkit-background-size: contain;
   background-size: contain;
   opacity: 0;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
-/* line 741, ../../src/static/index.scss */
+/* line 66, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .button-box .button.show {
   opacity: 1;
 }
-/* line 746, ../../src/static/index.scss */
+/* line 71, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .bottom-line {
   position: absolute;
   bottom: 10px;
   height: 30px;
   width: 100%;
 }
-/* line 751, ../../src/static/index.scss */
+/* line 76, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .bottom-line .logo {
   width: 100px;
   height: 30px;
-  background-image: url(http://45.56.91.160/static/images/logo.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/logo.png);
   -webkit-background-size: contain;
   background-size: contain;
   position: absolute;
@@ -930,16 +952,16 @@ textarea, input, a:link, .btns, p, div {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-/* line 763, ../../src/static/index.scss */
+/* line 88, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .bottom-line .logo.show {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* line 768, ../../src/static/index.scss */
+/* line 93, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .bottom-line .bac2home {
   width: 75px;
   height: 30px;
-  background-image: url(http://45.56.91.160/static/images/bac2home.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/bac2home.png);
   -webkit-background-size: contain;
   background-size: contain;
   position: absolute;
@@ -950,43 +972,43 @@ textarea, input, a:link, .btns, p, div {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-/* line 781, ../../src/static/index.scss */
+/* line 106, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .bottom-line .bac2home.show {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* line 788, ../../src/static/index.scss */
+/* line 1, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list {
-  background-image: url(http://45.56.91.160/static/images/exp-bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-bg.jpg);
 }
-/* line 790, ../../src/static/index.scss */
+/* line 3, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .pagetitle {
   width: 75px;
-  background-image: url(http://45.56.91.160/static/images/exp-list/02titleword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-list/02titleword.png);
 }
-/* line 794, ../../src/static/index.scss */
+/* line 7, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area {
   margin-top: 5%;
   margin-left: 25px;
   width: 100%;
   overflow: hidden;
 }
-/* line 799, ../../src/static/index.scss */
+/* line 12, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area .inner {
   width: 300%;
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
-/* line 804, ../../src/static/index.scss */
+/* line 17, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area .list-page {
   float: left;
 }
-/* line 807, ../../src/static/index.scss */
+/* line 20, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area ul {
   width: 100%;
   position: relative;
 }
-/* line 810, ../../src/static/index.scss */
+/* line 23, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area ul li {
   float: left;
   margin: 15px 0 0;
@@ -994,7 +1016,7 @@ textarea, input, a:link, .btns, p, div {
   position: relative;
   perspective: 1000px;
 }
-/* line 816, ../../src/static/index.scss */
+/* line 29, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area ul li a.anchor {
   display: block;
   position: absolute;
@@ -1005,55 +1027,55 @@ textarea, input, a:link, .btns, p, div {
   left: 4%;
   -webkit-transform: rotateX(49deg) rotateY(-8deg) rotateZ(47deg);
 }
-/* line 825, ../../src/static/index.scss */
+/* line 38, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area ul li a.anchor.anchor-bottom {
   top: 40%;
 }
-/* line 828, ../../src/static/index.scss */
+/* line 41, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area ul li a.anchor.anchor-6 {
   width: 74%;
   height: 33%;
   top: 34%;
   left: 9%;
 }
-/* line 834, ../../src/static/index.scss */
+/* line 47, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area ul li a.anchor.anchor-7 {
   width: 45%;
   height: 34%;
   top: 34%;
   left: 26%;
 }
-/* line 840, ../../src/static/index.scss */
+/* line 53, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area ul li a.anchor.anchor-8 {
   width: 72%;
   height: 34%;
   top: 34%;
   left: 11%;
 }
-/* line 847, ../../src/static/index.scss */
+/* line 60, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area ul li div {
   width: 100%;
   -webkit-background-size: contain;
   background-size: contain;
   background-position: center;
 }
-/* line 852, ../../src/static/index.scss */
+/* line 65, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area ul li div img {
   width: 100%;
   height: auto;
 }
-/* line 860, ../../src/static/index.scss */
+/* line 73, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .scroll-bar {
   width: 202px;
   height: 4px;
   font-size: 0;
-  margin: 10px auto 0;
+  margin: 0 auto;
   position: relative;
-  background: url(http://45.56.91.160/static/images/tipbg.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipbg.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 869, ../../src/static/index.scss */
+/* line 82, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .scroll-bar .tiplight {
   display: block;
   width: 43px;
@@ -1062,77 +1084,87 @@ textarea, input, a:link, .btns, p, div {
   top: 0;
   left: 0;
   font-size: 0;
-  background: url(http://45.56.91.160/static/images/tiplight.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tiplight.png);
   -webkit-background-size: contain;
   background-size: contain;
   -webkit-transition: left 1s ease-in-out;
   transition: left 1s ease-in-out;
 }
-/* line 884, ../../src/static/index.scss */
+/* line 97, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .scroll-tip {
   width: 180px;
   height: 10px;
-  margin: 10px auto 0;
-  background: url(http://45.56.91.160/static/images/exp-list/02tipword.png);
+  margin: 5px auto 0;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-list/02tipword.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 894, ../../src/static/index.scss */
+/* line 1, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars {
-  background-image: url(http://45.56.91.160/static/images/exp-bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-bg.jpg);
 }
-/* line 896, ../../src/static/index.scss */
+/* line 3, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars .pagetitle {
   width: 70px;
-  background-image: url(http://45.56.91.160/static/images/exp-cars/04titleword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-cars/04titleword.png);
 }
-/* line 900, ../../src/static/index.scss */
+/* line 7, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars .car-list-area {
   margin-top: 35px;
   width: 100%;
+  min-height: 75%;
   overflow: hidden;
 }
-/* line 904, ../../src/static/index.scss */
+/* line 12, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars .car-list-area .inner {
   width: 300%;
   -webkit-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
-/* line 909, ../../src/static/index.scss */
+/* line 17, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars .car-list-area .list-page {
   float: left;
 }
-/* line 912, ../../src/static/index.scss */
+/* line 20, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars .car-list-area ul {
-  width: 568px;
+  width: 90%;
   margin: 0 auto;
 }
-/* line 915, ../../src/static/index.scss */
+/* line 23, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars .car-list-area ul li {
   float: left;
-  margin: 15px 0 0 14px;
+  margin: 15px 0 0 4%;
+  width: 22%;
 }
-/* line 918, ../../src/static/index.scss */
-#is-landscape .pages.exp-cars .car-list-area ul li a.car-image {
+/* line 27, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .car-list-area ul li:nth-child(4n + 1) {
+  margin-left: 0;
+}
+/* line 30, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .car-list-area ul li a {
   display: block;
-  width: 125px;
-  height: 100px;
+  width: 100%;
   -webkit-background-size: contain;
   background-size: contain;
   background-position: center;
 }
-/* line 929, ../../src/static/index.scss */
+/* line 36, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .car-list-area ul li a img {
+  width: 100%;
+  height: auto;
+}
+/* line 44, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars .scroll-bar {
   width: 202px;
   height: 4px;
   font-size: 0;
   margin: 10px auto 0;
   position: relative;
-  background: url(http://45.56.91.160/static/images/tipbg.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipbg.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 938, ../../src/static/index.scss */
+/* line 53, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars .scroll-bar .tiplight {
   display: block;
   width: 43px;
@@ -1141,31 +1173,97 @@ textarea, input, a:link, .btns, p, div {
   top: 0;
   left: 0;
   font-size: 0;
-  background: url(http://45.56.91.160/static/images/tiplight.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tiplight.png);
   -webkit-background-size: contain;
   background-size: contain;
   -webkit-transition: left 1s ease-in-out;
   transition: left 1s ease-in-out;
 }
-/* line 953, ../../src/static/index.scss */
+/* line 68, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars .scroll-tip {
   width: 115px;
   height: 10px;
   margin: 10px auto 0;
-  background: url(http://45.56.91.160/static/images/exp-cars/04tipword.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-cars/04tipword.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 962, ../../src/static/index.scss */
-#is-landscape .pages.exp-booth {
-  background-image: url(http://45.56.91.160/static/images/exp-bg.jpg);
+/* line 77, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .intro-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  z-index: 5000;
 }
-/* line 964, ../../src/static/index.scss */
+/* line 88, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .intro-box .helper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-box-align: center;
+  box-align: center;
+}
+/* line 103, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .intro-box .helper .inner {
+  width: 89.47368%;
+}
+/* line 105, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .intro-box .helper .inner .title {
+  width: 41.17647%;
+}
+/* line 108, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .intro-box .helper .inner .content {
+  width: 100%;
+}
+/* line 110, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .intro-box .helper .inner .content .image-area {
+  width: 41.17647%;
+  float: left;
+}
+/* line 114, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .intro-box .helper .inner .content .txt-area {
+  width: 58.82353%;
+  float: left;
+}
+/* line 117, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .intro-box .helper .inner .content .txt-area .txt {
+  line-height: 1.7em;
+  font-size: 12px;
+  color: #333;
+  padding: 0 5%;
+}
+/* line 124, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .intro-box .helper .inner .content .tip {
+  text-align: center;
+  color: #999;
+  font-size: 11px;
+}
+/* line 130, ../../src/static/scss/exp-cars.scss */
+#is-landscape .pages.exp-cars .intro-box .helper .inner img {
+  width: 100%;
+  height: auto;
+}
+/* line 1, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth {
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-bg.jpg);
+}
+/* line 3, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .pagetitle {
   width: 90px;
-  background-image: url(http://45.56.91.160/static/images/exp-booth/03titleword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-booth/03titleword.png);
 }
-/* line 968, ../../src/static/index.scss */
+/* line 7, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-nav {
   position: absolute;
   top: 30px;
@@ -1179,7 +1277,7 @@ textarea, input, a:link, .btns, p, div {
   -webkit-box-align: center;
   box-align: center;
 }
-/* line 982, ../../src/static/index.scss */
+/* line 20, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-nav a {
   display: block;
   width: 66px;
@@ -1189,15 +1287,15 @@ textarea, input, a:link, .btns, p, div {
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 991, ../../src/static/index.scss */
+/* line 29, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-nav.nav-left {
   left: 0;
 }
-/* line 994, ../../src/static/index.scss */
+/* line 32, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-nav.nav-right {
   right: 0;
 }
-/* line 998, ../../src/static/index.scss */
+/* line 36, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail {
   width: 100%;
   height: calc( 100% - 33px );
@@ -1211,260 +1309,503 @@ textarea, input, a:link, .btns, p, div {
   -webkit-box-align: center;
   box-align: center;
 }
-/* line 1014, ../../src/static/index.scss */
+/* line 51, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes {
   width: 58.80%;
   background: rgba(255, 255, 255, 0.3);
   padding: 2.99%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: none;
 }
-/* line 1021, ../../src/static/index.scss */
+/* line 59, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes li {
   position: relative;
   float: left;
   margin-left: 3.18%;
   font-size: 0;
 }
-/* line 1026, ../../src/static/index.scss */
+/* line 64, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes li a {
   display: block;
 }
-/* line 1028, ../../src/static/index.scss */
+/* line 66, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes li a img {
   width: 100%;
   height: auto;
 }
-/* line 1033, ../../src/static/index.scss */
+/* line 71, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes li span.location-icon {
   width: 33px;
   height: 33px;
   position: absolute;
   top: -13px;
   left: calc( 50% - 16.5px );
-  background: url(http://45.56.91.160/static/images/exp-booth/hallbutton.png) no-repeat center;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-booth/hallbutton.png) no-repeat center;
   background-size: contain;
 }
-/* line 1044, ../../src/static/index.scss */
+/* line 82, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-1 .kia {
   width: 48.5%;
   margin-left: 0;
 }
-/* line 1048, ../../src/static/index.scss */
+/* line 86, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-1 .dongfengfengshen {
   width: 25.8%;
 }
-/* line 1051, ../../src/static/index.scss */
+/* line 89, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-1 .soueast {
   width: 19.1%;
 }
-/* line 1054, ../../src/static/index.scss */
+/* line 92, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-1 .mazda {
   width: 36.7%;
   margin-left: 0;
   margin-top: 6.92%;
 }
-/* line 1059, ../../src/static/index.scss */
+/* line 97, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-1 .peugeot {
   width: 28.6%;
   margin-top: 6.92%;
 }
-/* line 1063, ../../src/static/index.scss */
+/* line 101, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-1 .citroen {
   width: 28.34%;
   margin-top: 6.92%;
 }
-/* line 1069, ../../src/static/index.scss */
+/* line 107, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-1 .zhengzhourichan {
   width: 14.49%;
   margin-left: 0;
 }
-/* line 1073, ../../src/static/index.scss */
+/* line 111, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-1 .subaru {
   width: 21.02%;
 }
-/* line 1076, ../../src/static/index.scss */
+/* line 114, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-1 .qoros {
   width: 18.79%;
 }
-/* line 1079, ../../src/static/index.scss */
+/* line 117, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-1 .renault {
   width: 35.99%;
 }
-/* line 1082, ../../src/static/index.scss */
+/* line 120, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-1 .shuanghuan {
   width: 11.6%;
   margin-top: 6.92%;
   margin-left: 0;
 }
-/* line 1087, ../../src/static/index.scss */
+/* line 125, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-1 .ford {
   width: 71.7%;
   margin-top: 6.92%;
 }
-/* line 1091, ../../src/static/index.scss */
+/* line 129, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-1 .title {
   width: 10.3%;
   margin-top: 6.92%;
 }
-/* line 1097, ../../src/static/index.scss */
+/* line 135, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-1 .yiqi {
   width: 24.85%;
   margin-left: 0;
 }
-/* line 1101, ../../src/static/index.scss */
+/* line 139, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-1 .changan2 {
   width: 36.94%;
 }
-/* line 1104, ../../src/static/index.scss */
+/* line 142, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-1 .changan {
   width: 13.45%;
   margin-left: 0.32%;
 }
-/* line 1108, ../../src/static/index.scss */
+/* line 146, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-1 .landwind {
   width: 18%;
 }
-/* line 1111, ../../src/static/index.scss */
+/* line 149, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-1 .suzuki {
   width: 27.39%;
   margin-top: 6.92%;
   margin-left: 0;
 }
-/* line 1116, ../../src/static/index.scss */
+/* line 154, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-1 .shangqi {
   width: 8.6%;
   margin-top: 6.92%;
 }
-/* line 1120, ../../src/static/index.scss */
+/* line 158, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-1 .tongyongwuling {
   width: 9.24%;
   margin-top: 6.92%;
   margin-left: 0.32%;
 }
-/* line 1125, ../../src/static/index.scss */
+/* line 163, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-1 .datong {
   width: 16.88%;
   margin-top: 6.92%;
   margin-left: 0.32%;
 }
-/* line 1130, ../../src/static/index.scss */
+/* line 168, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-1 .roewe {
   width: 16.24%;
   margin-top: 6.92%;
   margin-left: 0.32%;
 }
-/* line 1135, ../../src/static/index.scss */
+/* line 173, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-1 .mg {
   width: 16.4%;
   margin-top: 6.92%;
   margin-left: 0.32%;
 }
-/* line 1143, ../../src/static/index.scss */
+/* line 180, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-1 .bmw {
   width: 48.38%;
   margin-left: 0;
 }
-/* line 1147, ../../src/static/index.scss */
+/* line 185, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-1 .acura {
   width: 27.12%;
 }
-/* line 1150, ../../src/static/index.scss */
+/* line 188, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-1 .lincoln {
   width: 18.1%;
 }
-/* line 1153, ../../src/static/index.scss */
+/* line 191, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-1 .infiniti {
   width: 32.8%;
   margin-top: 6.92%;
   margin-left: 0.32%;
 }
-/* line 1158, ../../src/static/index.scss */
+/* line 196, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-1 .calson {
   width: 11.94%;
   margin-top: 6.92%;
 }
-/* line 1162, ../../src/static/index.scss */
+/* line 200, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-1 .jaguar {
   width: 48.4%;
   margin-top: 6.92%;
 }
-/* line 1168, ../../src/static/index.scss */
+/* line 206, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-1 .cadillac {
   width: 35.35%;
   margin-left: 0;
 }
-/* line 1172, ../../src/static/index.scss */
+/* line 210, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-1 .lexus {
   width: 29.14%;
 }
-/* line 1175, ../../src/static/index.scss */
+/* line 213, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-1 .volvo {
   width: 28.98%;
 }
-/* line 1178, ../../src/static/index.scss */
+/* line 216, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-1 .ds {
   width: 23.57%;
   margin-top: 6.92%;
   margin-left: 0.32%;
 }
-/* line 1183, ../../src/static/index.scss */
+/* line 221, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-1 .fujianbenz {
   width: 15.29%;
   margin-top: 6.92%;
 }
-/* line 1187, ../../src/static/index.scss */
+/* line 225, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-1 .benz {
   width: 54.4%;
   margin-top: 6.92%;
 }
-/* line 1192, ../../src/static/index.scss */
+/* line 230, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-6 {
   width: 49.6%;
 }
-/* line 1194, ../../src/static/index.scss */
+/* line 232, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-6 .audi {
   width: 61.5%;
   margin-left: 0;
 }
-/* line 1198, ../../src/static/index.scss */
+/* line 236, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-6 .skoda {
   width: 35.18%;
 }
-/* line 1201, ../../src/static/index.scss */
+/* line 239, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-6 .volkswagen {
   width: 100%;
   margin-top: 6.92%;
   margin-left: 0.32%;
 }
-/* line 1207, ../../src/static/index.scss */
+/* line 245, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-7 {
   width: 55.26%;
 }
-/* line 1209, ../../src/static/index.scss */
+/* line 247, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-7 li {
   margin-left: 4.58%;
 }
-/* line 1212, ../../src/static/index.scss */
+/* line 250, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-7 .lamborghini {
   width: 19.98%;
   margin-left: 0;
 }
-/* line 1216, ../../src/static/index.scss */
+/* line 254, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-7 .davidson {
   width: 16.44%;
 }
-/* line 1219, ../../src/static/index.scss */
+/* line 257, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-7 .forum {
   width: 16.78%;
 }
-/* line 1222, ../../src/static/index.scss */
+/* line 260, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-7 .safechair {
   width: 10.34%;
 }
-/* line 1225, ../../src/static/index.scss */
+/* line 263, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-detail .boothes.booth-7 .patton {
   width: 17.46%;
+}
+/* line 267, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 {
+  width: 46.0793%;
+}
+/* line 271, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 li {
+  margin-left: 3.82409%;
+}
+/* line 274, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .porsche {
+  width: 21.22371%;
+  margin-left: 0;
+}
+/* line 278, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .ferrari {
+  width: 22.17973%;
+}
+/* line 281, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .xingkete {
+  width: 12.4283%;
+}
+/* line 284, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .rr {
+  width: 16.44359%;
+}
+/* line 287, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .armadillo {
+  width: 12.4283%;
+}
+/* line 290, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .speedauto {
+  width: 24.47419%;
+  margin-top: 6.5534%;
+  margin-left: 15.86998%;
+}
+/* line 295, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .astonmartin {
+  width: 24.47419%;
+  margin-top: 6.5534%;
+  margin-left: 0.38241%;
+}
+/* line 300, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .maserati {
+  width: 21.22371%;
+  margin-left: 0;
+  margin-top: 6.5534%;
+}
+/* line 305, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .bentley {
+  width: 18.92925%;
+  margin-top: 6.5534%;
+  margin-left: 10.13384%;
+}
+/* line 310, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .zoemo {
+  width: 13.57553%;
+  margin-top: 6.5534%;
+}
+/* line 314, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .saleen {
+  width: 12.04589%;
+  margin-top: 6.5534%;
+}
+/* line 318, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-8 .gmc {
+  width: 12.4283%;
+  margin-top: 6.5534%;
+}
+/* line 323, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-2 {
+  width: 55.50661%;
+}
+/* line 327, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-2 .wanlitire {
+  width: 9.68254%;
+  margin-left: 0;
+}
+/* line 331, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-2 .jac {
+  width: 28.57143%;
+}
+/* line 334, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-2 .hyundai {
+  width: 55.07937%;
+}
+/* line 337, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-2 .shangzhe {
+  width: 9.68254%;
+  margin-left: 0;
+  margin-top: 8.98058%;
+}
+/* line 342, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-2 .huasai {
+  width: 14.12698%;
+  margin-top: 8.98058%;
+}
+/* line 346, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-2 .tengshi {
+  width: 14.44444%;
+  margin-top: 8.98058%;
+}
+/* line 350, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-1-2 .beiqi {
+  width: 51.90476%;
+  margin-top: 8.98058%;
+}
+/* line 355, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-2 {
+  width: 55.3304%;
+}
+/* line 359, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-2 li {
+  margin-left: 0.31847%;
+}
+/* line 362, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-2 .gag {
+  width: 46.81529%;
+  margin-left: 0;
+}
+/* line 366, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-2 .toyota {
+  width: 26.75159%;
+}
+/* line 369, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-2 .mitsubishi {
+  width: 25.63694%;
+}
+/* line 372, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-2 .gacfca {
+  width: 22.92994%;
+  margin-left: 0;
+  margin-top: 8.98058%;
+}
+/* line 377, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-2 .guangqihonda {
+  width: 28.50318%;
+  margin-top: 8.98058%;
+}
+/* line 381, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-2 .honda {
+  width: 12.89809%;
+  margin-top: 8.98058%;
+}
+/* line 385, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-2-2 .dongfenghonda {
+  width: 34.71338%;
+  margin-top: 8.98058%;
+}
+/* line 390, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-2 {
+  width: 55.3304%;
+}
+/* line 394, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-2 .zhonghua {
+  width: 32.00637%;
+  margin-left: 0;
+}
+/* line 398, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-2 .luxgen {
+  width: 18.94904%;
+}
+/* line 401, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-2 .buick {
+  width: 42.67516%;
+}
+/* line 404, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-2 .chery {
+  width: 32.00637%;
+  margin-left: 0;
+  margin-top: 8.98058%;
+}
+/* line 409, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-2 .lifan {
+  width: 18.94904%;
+  margin-top: 8.98058%;
+}
+/* line 413, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-3-2 .chevrolet {
+  width: 42.67516%;
+  margin-top: 8.98058%;
+}
+/* line 418, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-2 {
+  width: 55.3304%;
+}
+/* line 422, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-2 .geely {
+  width: 31.21019%;
+  margin-left: 0;
+}
+/* line 426, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-2 .haval {
+  width: 46.97452%;
+}
+/* line 429, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-2 .foton {
+  width: 15.44586%;
+}
+/* line 432, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-2 .bridgestone {
+  width: 12.26115%;
+  margin-left: 0;
+  margin-top: 8.98058%;
+}
+/* line 437, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-2 .qichen {
+  width: 23.72611%;
+  margin-top: 8.98058%;
+}
+/* line 441, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-4-2 .nissan {
+  width: 57.64331%;
+  margin-top: 8.98058%;
+}
+/* line 446, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-2 {
+  width: 55.3304%;
+}
+/* line 450, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-2 .byd {
+  width: 37.57962%;
+  margin-left: 0;
+}
+/* line 454, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-2 .fengxing {
+  width: 27.07006%;
+}
+/* line 457, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-2 .yiche {
+  width: 28.98089%;
+}
+/* line 460, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-2 .jmc {
+  width: 25.63694%;
+  margin-left: 0;
+  margin-top: 8.98058%;
+}
+/* line 465, ../../src/static/scss/exp-booth.scss */
+#is-landscape .pages.exp-booth .booth-detail .boothes.booth-5-2 .toyota {
+  width: 71.17834%;
+  margin-top: 8.98058%;
 }
 
 @-webkit-keyframes shakeleft {
@@ -1500,13 +1841,13 @@ textarea, input, a:link, .btns, p, div {
   }
 }
 @media all and (orientation: portrait) {
-  /* line 1269, ../../src/static/index.scss */
+  /* line 737, ../../src/static/index.scss */
   .landscape {
     display: none;
   }
 }
 @media all and (orientation: landscape) {
-  /* line 1275, ../../src/static/index.scss */
+  /* line 743, ../../src/static/index.scss */
   .portrait {
     display: none;
   }

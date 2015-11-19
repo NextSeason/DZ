@@ -1,0 +1,137 @@
+.pages.exp-cars {
+    background-image : url( @@path.images/exp-bg.jpg );            
+    .pagetitle {
+        width : 70px;
+        background-image : url( @@path.images/exp-cars/04titleword.png );
+    }
+    .car-list-area {
+        margin-top :  35px;
+        width : 100%;
+        min-height : 75%;
+        overflow : hidden;
+        .inner {
+            width : 300%;
+            -webkit-transition : all .6s ease-in-out;
+            transition : all .6s ease-in-out;
+        }
+        .list-page {
+            float : left;
+        }
+        ul {
+            width : 90%; 
+            margin : 0 auto;
+            li {
+                float : left;
+                margin : 15px 0 0 4%;
+                width : 22%;
+                &:nth-child( 4n + 1 ) {
+                    margin-left : 0;
+                }
+                a {
+                    display : block;
+                    width : 100%;
+                    -webkit-background-size : contain;
+                    background-size : contain;
+                    background-position : center;
+                    img {
+                        width : 100%;
+                        height : auto;
+                    }
+                }
+            }
+        }
+    }
+    .scroll-bar {
+        width : 202px;
+        height : 4px;
+        font-size : 0;
+        margin : 10px auto 0;
+        position : relative;
+        background : url( @@path.images/tipbg.png );
+        -webkit-background-size : contain;
+        background-size : contain;
+        .tiplight {
+            display : block;
+            width : 43px;
+            height : 4px;
+            position : absolute;
+            top : 0;
+            left : 0;
+            font-size : 0;
+            background : url( @@path.images/tiplight.png );
+            -webkit-background-size : contain;
+            background-size : contain;
+            -webkit-transition : left 1s ease-in-out;
+            transition : left 1s ease-in-out;
+        }
+    }
+    .scroll-tip {
+        width : 115px;
+        height : 10px;
+        margin : 10px auto 0;
+        background : url( @@path.images/exp-cars/04tipword.png );
+        -webkit-background-size : contain;
+        background-size : contain;
+    }
+
+    .intro-box {
+        display : none;
+        position : fixed;
+        top : 0;
+        bottom : 0;
+        left : 0;
+        right : 0;
+        width : 100%;
+        height : 100%;
+        background : #FFF;
+        z-index : 5000;
+        .helper {
+            width : 100%;
+            height : 100%;
+
+            display : -webkit-box;
+            display : box;
+ 
+            -webkit-box-orient : horizontal;
+            box-orient : horizontal;
+ 
+            -webkit-box-pack : center;
+            box-pack : center;
+ 
+            -webkit-box-align : center;
+            box-align : center;
+            .inner {
+                width : percentage( 1020/ 1140 );
+                .title {
+                    width : percentage( 420 / 1020 );
+                }
+                .content {
+                    width : 100%;
+                    .image-area {
+                        width : percentage( 420 / 1020 );
+                        float : left;
+                    }
+                    .txt-area {
+                        width : percentage( 600 / 1020 );
+                        float : left;
+                        .txt {
+                            line-height : 1.7em;
+                            font-size : 12px;
+                            color : #333;
+                            padding : 0 5%;
+                        }
+                    }
+                    .tip {
+                        text-align : center;
+                        color : #999;
+                        font-size : 11px;
+                    }
+                }
+                img {
+                    width : 100%;
+                    height : auto;
+                }
+            }
+        }
+    }
+}

@@ -19,6 +19,7 @@
 } )();
 
 var Jaguar = ({
+    /*
     sides : [ {
 		url: '@@path.images/tuan/1.jpg',
 		position: [ -512, 0, 0 ],
@@ -44,29 +45,74 @@ var Jaguar = ({
 		position: [ 0, 0, -512 ],
 		rotation: [ 0, 0, 0 ]
 	} ],
+
+    */
+    sides : [ {
+		url: '@@path.images/tuan/4.jpg',
+		position: [ -512, 0, 0 ],
+		rotation: [ 0, Math.PI / 2, 0 ]
+	}, {
+		url: '@@path.images/tuan/2.jpg',
+		position: [ 512, 0, 0 ],
+		rotation: [ 0, -Math.PI / 2, 0 ]
+	}, {
+		url: '@@path.images/tuan/5.jpg',
+		position: [ 0,  512, 0 ],
+		rotation: [ Math.PI / 2, 0, Math.PI / 2 ]
+	}, {
+		url: '@@path.images/tuan/6.jpg',
+		position: [ 0, -512, 0 ],
+		rotation: [ -Math.PI / 2, 0, -Math.PI / 2 ]
+	}, {
+		url: '@@path.images/tuan/3.jpg',
+		position: [ 0, 0,  512 ],
+		rotation: [ 0, Math.PI, 0 ]
+	}, {
+		url: '@@path.images/tuan/1.jpg',
+		position: [ 0, 0, -512 ],
+		rotation: [ 0, 0, 0 ]
+	} ],
+
     points : [ {
-        coords : [ 560, 450 ],
-        target : 5,
-        className : 'red',
-        link : 'http://test.qctt.cn/JieBaoFirst/zhongkong.html'
-    }, {
-        coords : [ 100, 450 ],
+        coords : [ 220, 470 ],
         target : 1,
-        className : 'blue',
-        link : 'http://test.qctt.cn/JieBaoFirst/waiguan.html'
+        picture : 1
     }, {
-        coords : [ 580, 45 ],
-        target : 3,
+        coords : [ 70, 550 ],
+        target : 1,
+        picture : 2
+    }, {
+        coords : [ 510, 590 ],
+        target : 1,
+        picture : 6
+    }, {
+        coords : [ 100, 680 ],
+        target : 1,
+        picture : 3
+    }, {
+        coords : [ 490, 690 ],
+        target : 1,
+        picture : 4
+    }, {
+        coords : [ 600, 210 ],
+        target : 1,
+        picture : 7
+    }, {
+        coords : [ 500, 0 ],
+        target : 1,
         picture : 8
+    }, {
+        coords : [ 150, 940 ],
+        target : 1,
+        picture : 9
     } ],
-    text : [ {
-        coords : [ 135, 455 ],
-        t : '打开车门查看车身外观',
-        className : 'blue',
-        target : 1
-    } ],
+    text : [ ],
     init : function() {
         var me = this;
+
+        this.sides = window.sides || this.sides;
+        this.points = window.points || this.points;
+
 
         this.action().render();
         
@@ -82,7 +128,11 @@ var Jaguar = ({
     },
 
     action : function() {
-        this.camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window. innerHeight, 1, 1000 );
+        this.camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window. innerHeight, 1, 1000 );
+        this.camera.position.x = -100;
+        this.camera.position.y = 100;
+        this.camera.position.z = 0;
+        this.camera.lookAt( { x : 0, y : 0, z : 0 } );
         this.controls = new THREE.DeviceOrientationControls( this.camera );
         this.controls.connect();
         this.scene = new THREE.Scene();
@@ -140,8 +190,6 @@ var Jaguar = ({
             } else if( point.hasOwnProperty( 'link' ) ) {
                 elem.setAttribute( 'href', point[ 'link' ] );
             }
-
-            elem.innerHTML = '<span><b></b></span>';
 
             elem.style.left = point.coords[ 0 ] + 'px';
             elem.style.top = point.coords[ 1 ] + 'px';
@@ -222,9 +270,8 @@ var Jaguar = ({
             }
         } );
 
-        $( '.pictures a.back' ).on( 'tap', function( e ) {
-            $( '.pictures' ).addClass( 'hidden' );
-            $( '.pictures .items' ).removeClass( 'active' );
+        $( '.pictures-box' ).on( 'tap', function( e ) {
+            $( '.pictures-box' ).hide();
             me.picShowing = false;
         } );
 
@@ -232,12 +279,9 @@ var Jaguar = ({
     },
 
     showPictures : function( i ) {
-        $( '.pictures .items' ).hide();
-        $( '.pictures .item-' + i ).show();
-        setTimeout( function() {
-            $( '.pictures .item-' + i ).addClass( 'active' );
-        }, 100 );
-        $( '.pictures' ).removeClass( 'hidden' );
+        $( '.pictures-box' ).show();
+        $( '.pictures-box .picture' ).hide();
+        $( '.pictures-box .pic-' + i ).show();
 
         this.picShowing = true;
     },

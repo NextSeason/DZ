@@ -4,12 +4,13 @@ div.sides {
 }
 
 a.points {
-    width : 36px;
-    height : 36px;
+    width : 44px;
+    height : 44px;
     display : block;
     position : absolute;
-    background : transparent;
-    text-decoration : none;
+    background : url( @@path.images/tuan/bluebutton.png ) no-repeat center;
+    -webkit-background-size : contain;
+    background-size : contain;
     font-size : 0;
     z-index : 100;
     -webkit-touch-callout : none;
@@ -19,37 +20,6 @@ a.points {
     -webkit-animation-delay : 0;
     -webkit-animation-iteration-count : infinite;
     -webkit-backface-visibility : hidden;
-    span {
-        position : relative;
-        display : block;
-        width : 19px;
-        height : 19px;
-        border : solid 4px #C74140;
-        border-radius : 100%;
-        -webkit-border-radius : 100%;
-        b {
-            background : #C74140;
-            display : block;
-            width : 13px;
-            height : 13px;
-            margin : 3px auto;
-            border-radius : 100%;
-            -webkit-border-radius : 100%;
-        }
-    }
-    &.blue {
-        span {
-            border-color : #1476CC;
-        }
-        b {
-            background : #1476CC;
-        }
-    }
-    &.red {
-        span {
-            border-color : #C74140;
-        }
-    }
 }
 a.text {
     font-size : 14px;
