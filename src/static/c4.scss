@@ -1,0 +1,229 @@
+#is-landscape.c4 {
+    .pages {
+        .top {
+            .pagetitle {
+                background-image : url( @@path.images/c4/carword.png );
+            }
+        }
+        &.tuan {
+            background-image : url( @@path.images/c4/03bg.jpg );
+            .title {
+                width : 142.5px;
+                height : 78.5px;
+                background-image : url( @@path.images/c4/03title.png );
+                margin : 150px 0 0 45px;
+            }
+            .detail-button-box {
+                margin-top : 0;
+            }
+        }
+        &.tuan3 {
+            .big-pic-layer {
+                position : fixed;
+                top : 0;
+                left : 0;
+                bottom : 0;
+                right : 0;
+                width : 100%;
+                height : 100%;
+                z-index : 200;
+                background-repeat : no-repeat;
+                background-position : center;
+                -webkit-background-size : cover;
+                background-size : cover;
+                display : none;
+                .item {
+                    width : 100%;
+                    height : 100%;
+                    display : none;
+                    padding-top : 0.1px;
+                    background-position : center;
+                    -webkit-background-size : cover;
+                    background-size : cover;
+                    background-repeat : no-repeat;
+                    .center-helper {
+                        width : 100%;
+                        height : 100%;
+                        display : -webkit-box;
+                        display : box;
+
+                        -webkit-box-orient : horizontal;
+                        box-orient : horizontal;
+
+                        -webkit-box-align : center;
+                        box-align : center;
+                    }
+                    .inner {
+                        width : 100%;
+                    }
+                    .txt,
+                    .back-btn,
+                    .img {
+                        display : block;
+                        img {
+                            width : 100%;
+                            height : auto;
+                        }
+                    }
+                    &.item-1 {
+                        background-image :url( @@path.images/c4/06-1.jpg );
+                        .inner {
+                            $width : 1135;
+                            margin-left : percentage( 85 / $width );
+                            .txt {
+                                width : percentage( 275 / $width );
+                            }
+                            .back-btn {
+                                width : percentage( 175 / 1135 ); 
+                                margin-top : 90px;
+                            }
+                        }
+                    }
+                    &.item-2 {
+                        background-image :url( @@path.images/c4/06-2.jpg );
+                        .inner {
+                            margin-left : 0;
+                            position : relative;
+                            width : 100%;
+                            height : 100%;
+                            .txt {
+                                position : absolute;
+                                width : percentage( 335 / 1135 ); 
+                                right : percentage( 60 / 1135 );
+                                top : percentage( 240 / 550 ); 
+                            }
+                            .back-btn {
+                                margin : 0;
+                                position : absolute;
+                                width : percentage( 175 / 1135 ); 
+                                top : percentage( 112 / 550 );
+                                right : percentage( 60 / 1135 );
+                            }
+                        }
+                    }
+                    &.item-3 {
+                        background-image :url( @@path.images/c4/06-3.jpg );
+                        .inner {
+                            width : 100%;
+                            height : 100%;
+                            position : relative;
+                            margin-left : 0;
+                        }
+                        .txt {
+                            float : none;
+                            position : absolute;
+                            width : percentage( 324 / 1135 ); 
+                            right : percentage( 60 / 1135 );
+                            top : percentage( 300 / 550 );
+                        }
+                        .back-btn {
+                            position : absolute;
+                            right : percentage( 60 / 1135 );
+                            top : percentage( 86 / 550 );
+                        }
+                    }
+                    &.item-4 {
+                        background-image :url( @@path.images/c4/06-4.jpg );
+                        .inner {
+                            width : 100%;
+                            height : 100%;
+                            position : relative;
+                            margin-left : 0;
+                        }
+                        .txt {
+                            float : none;
+                            position : absolute;
+                            width : percentage( 324 / 1135 ); 
+                            right : percentage( 80 / 1135 );
+                            top : percentage( 135 / 550 );
+                        }
+                        .back-btn {
+                            position : absolute;
+                            right : percentage( 80 / 1135 );
+                            bottom : percentage( 130 / 550 );
+                        }
+
+                    }
+                    &.item-5 {
+                        background-image :url( @@path.images/c4/06-5.jpg );
+                        $width : 755;
+                        .inner {
+                             margin : percentage( 230 / 550 ) auto 0;
+                             width : percentage( $width / 1135 ); 
+                             position : relative;
+                         }   
+                         .txt {
+                             float : left;
+                             width : percentage( 552 / $width );
+                         }   
+                         .back-btn {
+                             position : static;
+                             float : right;
+                             width : percentage( 174 / $width );
+                             margin-top : 0;
+                         }
+                    }
+                    &.item-6 {
+                        background-image :url( @@path.images/c4/06-6.jpg );
+                        .inner {
+                            $width : 1135;
+                            height : auto;
+                            margin-left : percentage( 110 / $width );
+                            .txt {
+                                position : static;
+                                width : percentage( 303 / $width );
+                                margin-top : percentage( 80 / 550 );
+                            }
+                            .back-btn {
+                                width : percentage( 175 / 1135 ); 
+                                position : static;
+                            }
+                        }
+                    }
+                    &.item-7 {
+                        background-image :url( @@path.images/c4/06-7.jpg );
+                        .inner {
+                            width : 100%;
+                            height : 100%;
+                            position : relative;
+                            margin : 0;
+                            .txt {
+                                width : percentage( 321 / 1135 );
+                                position : absolute;
+                                right : percentage( 95 / 1135 );
+                                bottom : percentage( 100 / 550 );
+                            }
+                            .back-btn {
+                                width : 15.26%; 
+                                position : absolute;
+                                top : percentage( 110 / 550 );
+                                right : percentage( 95 / 1135 );
+                            }
+                        }
+                    }
+                    &.item-8 {
+                        background-image :url( @@path.images/c4/06-8.jpg );
+                        .inner {
+                            width : 100%;
+                            height : 100%;
+                            position : relative;
+                            margin-left : 0;
+                        }
+                        .txt {
+                            float : none;
+                            position : absolute;
+                            width : percentage( 270 / 1135 ); 
+                            right : percentage( 85 / 1135 );
+                            top : percentage( 90 / 550 );
+                        }
+                        .back-btn {
+                            position : absolute;
+                            right : percentage( 85 / 1135 );
+                            bottom : percentage( 55 / 550 );
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

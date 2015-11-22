@@ -94,7 +94,7 @@ textarea, input, a:link, .btns, p, div {
 
 /* line 30, ../../src/static/index.scss */
 #is-portrait {
-  display: none;
+  display: none !important;
   background: #000;
   height: 100%;
   width: 100%;
@@ -111,7 +111,7 @@ textarea, input, a:link, .btns, p, div {
 #is-portrait .rotation {
   width: 300px;
   height: 265px;
-  background: url(http://45.56.91.160/static/images/rotation.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/rotation.png);
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -172,7 +172,7 @@ textarea, input, a:link, .btns, p, div {
   height: 33px;
   position: absolute;
   left: 30px;
-  background: url(http://45.56.91.160/static/images/bac.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/bac.png);
   background-size: contain;
 }
 /* line 111, ../../src/static/index.scss */
@@ -182,7 +182,7 @@ textarea, input, a:link, .btns, p, div {
   height: 33px;
   position: absolute;
   right: 30px;
-  background: url(http://45.56.91.160/static/images/menubutton.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/menubutton.png);
   background-size: contain;
 }
 /* line 120, ../../src/static/index.scss */
@@ -239,18 +239,18 @@ textarea, input, a:link, .btns, p, div {
   position: absolute;
   right: 25px;
   bottom: 14px;
-  background-image: url(http://45.56.91.160/static/images/tuan/next.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/next.png);
 }
 /* line 176, ../../src/static/index.scss */
 #is-landscape .pages.cover {
-  background-image: url(http://45.56.91.160/static/images/01bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/01bg.jpg);
 }
 /* line 178, ../../src/static/index.scss */
 #is-landscape .pages.cover .title {
   width: 285px;
   height: 125px;
   margin: 6% auto 0;
-  background: url(http://45.56.91.160/static/images/01title.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/01title.png);
   -webkit-background-size: contain;
   background-size: contain;
   -webkit-transform: scale(0);
@@ -294,13 +294,13 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 219, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .arrows.arrow-left {
-  background-image: url(http://45.56.91.160/static/images/tipL.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipL.png);
   left: 7px;
   -webkit-animation-name: 'shakeleft';
 }
 /* line 224, ../../src/static/index.scss */
 #is-landscape .pages.cover .button-box .arrows.arrow-right {
-  background-image: url(http://45.56.91.160/static/images/tipR.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipR.png);
   right: 7px;
   -webkit-animation-name: 'shakeright';
 }
@@ -310,7 +310,7 @@ textarea, input, a:link, .btns, p, div {
   width: 142px;
   height: 37px;
   margin: 0 auto;
-  background: url(http://45.56.91.160/static/images/01button.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/01button.png);
   -webkit-background-size: contain;
   background-size: contain;
   opacity: 0;
@@ -332,7 +332,7 @@ textarea, input, a:link, .btns, p, div {
 #is-landscape .pages.cover .bottom-line .logo {
   width: 100px;
   height: 30px;
-  background-image: url(http://45.56.91.160/static/images/logo.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/logo.png);
   -webkit-background-size: contain;
   background-size: contain;
   position: absolute;
@@ -351,7 +351,7 @@ textarea, input, a:link, .btns, p, div {
 #is-landscape .pages.cover .bottom-line .bac2home {
   width: 75px;
   height: 30px;
-  background-image: url(http://45.56.91.160/static/images/bac2home.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/bac2home.png);
   -webkit-background-size: contain;
   background-size: contain;
   position: absolute;
@@ -369,12 +369,12 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 289, ../../src/static/index.scss */
 #is-landscape .pages.list {
-  background-image: url(http://45.56.91.160/static/images/list/02bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/list/02bg.jpg);
 }
 /* line 291, ../../src/static/index.scss */
 #is-landscape .pages.list .pagetitle {
   width: 75px;
-  background-image: url(http://45.56.91.160/static/images/word.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/word.png);
 }
 /* line 295, ../../src/static/index.scss */
 #is-landscape .pages.list .car-list-area {
@@ -428,7 +428,7 @@ textarea, input, a:link, .btns, p, div {
   font-size: 0;
   margin: 10px auto 0;
   position: relative;
-  background: url(http://45.56.91.160/static/images/tipbg.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipbg.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
@@ -441,7 +441,7 @@ textarea, input, a:link, .btns, p, div {
   top: 0;
   left: 0;
   font-size: 0;
-  background: url(http://45.56.91.160/static/images/tiplight.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tiplight.png);
   -webkit-background-size: contain;
   background-size: contain;
   -webkit-transition: left 1s ease-in-out;
@@ -452,13 +452,13 @@ textarea, input, a:link, .btns, p, div {
   width: 95px;
   height: 10px;
   margin: 10px auto 0;
-  background: url(http://45.56.91.160/static/images/tipword.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipword.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
 /* line 365, ../../src/static/index.scss */
 #is-landscape .pages.tuan {
-  background-image: url(http://45.56.91.160/static/images/tuan/03bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/03bg.jpg);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   opacity: 0;
@@ -474,14 +474,14 @@ textarea, input, a:link, .btns, p, div {
 /* line 377, ../../src/static/index.scss */
 #is-landscape .pages.tuan .pagetitle {
   width: 110px;
-  background-image: url(http://45.56.91.160/static/images/tuan/carword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
 }
 /* line 381, ../../src/static/index.scss */
 #is-landscape .pages.tuan .title {
   width: 200px;
   height: 140px;
   margin: 35px 0 0 30px;
-  background-image: url(http://45.56.91.160/static/images/tuan/03title.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/03title.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
@@ -504,12 +504,12 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 402, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .arrows.arrow-left {
-  background-image: url(http://45.56.91.160/static/images/tipL-orange.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipL-orange.png);
   left: 7px;
 }
 /* line 406, ../../src/static/index.scss */
 #is-landscape .pages.tuan .detail-button-box .arrows.arrow-right {
-  background-image: url(http://45.56.91.160/static/images/tipR-orange.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipR-orange.png);
   right: 7px;
 }
 /* line 411, ../../src/static/index.scss */
@@ -518,26 +518,26 @@ textarea, input, a:link, .btns, p, div {
   width: 120px;
   height: 55px;
   margin: 0 auto;
-  background: url(http://45.56.91.160/static/images/360button.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/360button.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
 /* line 423, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 {
   display: none;
-  /* background-image : url( http://45.56.91.160/static/images/tuan/04-1.jpg ); */
+  /* background-image : url( http://192.168.2.103:8099/DZ/dist/static/images/tuan/04-1.jpg ); */
 }
 /* line 426, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 .pagetitle {
   width: 110px;
-  background-image: url(http://45.56.91.160/static/images/tuan/carword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
 }
 /* line 430, ../../src/static/index.scss */
 #is-landscape .pages.tuan2 .tip {
   width: 152px;
   height: 37px;
   margin: 50px 0 0 30px;
-  background-image: url(http://45.56.91.160/static/images/tuan/04tip.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04tip.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
@@ -560,7 +560,7 @@ textarea, input, a:link, .btns, p, div {
   height: 11px;
   font-size: 0;
   position: fixed;
-  background-image: url(http://45.56.91.160/static/images/tuan/04line.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04line.png);
   bottom: 24px;
   left: 25%;
 }
@@ -570,18 +570,18 @@ textarea, input, a:link, .btns, p, div {
   height: 53px;
   font-size: 0;
   position: absolute;
-  background-image: url(http://45.56.91.160/static/images/tuan/04button.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/04button.png);
   top: -21px;
   left: -21px;
 }
 /* line 469, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 {
-  background-image: url(http://45.56.91.160/static/images/tuan/05bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/05bg.jpg);
 }
 /* line 471, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .pagetitle {
   width: 110px;
-  background-image: url(http://45.56.91.160/static/images/tuan/carword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/carword.png);
 }
 /* line 475, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .img-list-area {
@@ -617,7 +617,7 @@ textarea, input, a:link, .btns, p, div {
 #is-landscape .pages.tuan3 .tip {
   width: 75px;
   height: 10px;
-  background-image: url(http://45.56.91.160/static/images/tuan/05tip.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/05tip.png);
   margin: 10px auto;
 }
 /* line 506, ../../src/static/index.scss */
@@ -677,7 +677,7 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 553, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-1 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-1.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-1.jpg);
 }
 /* line 555, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-1 .inner {
@@ -694,7 +694,7 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 566, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-2 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-2.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-2.jpg);
 }
 /* line 568, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-2 .inner {
@@ -711,7 +711,7 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 579, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-3 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-3.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-3.jpg);
 }
 /* line 581, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-3 .inner {
@@ -738,7 +738,7 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 601, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-4 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-4.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-4.jpg);
 }
 /* line 603, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-4 .inner {
@@ -755,7 +755,7 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 614, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-5 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-5.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-5.jpg);
 }
 /* line 616, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-5 .inner {
@@ -772,7 +772,7 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 627, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-6 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-6.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-6.jpg);
 }
 /* line 629, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-6 .inner {
@@ -794,7 +794,7 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 645, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-7 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-7.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-7.jpg);
 }
 /* line 647, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-7 .inner {
@@ -811,7 +811,7 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 658, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-8 {
-  background-image: url(http://45.56.91.160/static/images/tuan/06-8.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tuan/06-8.jpg);
 }
 /* line 660, ../../src/static/index.scss */
 #is-landscape .pages.tuan3 .big-pic-layer .item.item-8 .inner {
@@ -853,14 +853,14 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 1, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover {
-  background-image: url(http://45.56.91.160/static/images/exp-01bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-01bg.jpg);
 }
 /* line 3, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .title {
   width: 60.53%;
   height: 34.02%;
   margin: 8% auto 0;
-  background: url(http://45.56.91.160/static/images/exp-01title.png) no-repeat center;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-01title.png) no-repeat center;
   -webkit-background-size: contain;
   background-size: contain;
   -webkit-transform: scale(0);
@@ -904,13 +904,13 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 44, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .button-box .arrows.arrow-left {
-  background-image: url(http://45.56.91.160/static/images/tipL.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipL.png);
   left: 7px;
   -webkit-animation-name: 'shakeleft';
 }
 /* line 49, ../../src/static/scss/exp-cover.scss */
 #is-landscape .pages.exp-cover .button-box .arrows.arrow-right {
-  background-image: url(http://45.56.91.160/static/images/tipR.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/tipR.png);
   right: 7px;
   -webkit-animation-name: 'shakeright';
 }
@@ -920,7 +920,7 @@ textarea, input, a:link, .btns, p, div {
   width: 142px;
   height: 37px;
   margin: 0 auto;
-  background: url(http://45.56.91.160/static/images/exp-01button.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-01button.png);
   -webkit-background-size: contain;
   background-size: contain;
   opacity: 0;
@@ -942,7 +942,7 @@ textarea, input, a:link, .btns, p, div {
 #is-landscape .pages.exp-cover .bottom-line .logo {
   width: 100px;
   height: 30px;
-  background-image: url(http://45.56.91.160/static/images/logo.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/logo.png);
   -webkit-background-size: contain;
   background-size: contain;
   position: absolute;
@@ -961,7 +961,7 @@ textarea, input, a:link, .btns, p, div {
 #is-landscape .pages.exp-cover .bottom-line .bac2home {
   width: 75px;
   height: 30px;
-  background-image: url(http://45.56.91.160/static/images/bac2home.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/bac2home.png);
   -webkit-background-size: contain;
   background-size: contain;
   position: absolute;
@@ -979,12 +979,12 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 1, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list {
-  background-image: url(http://45.56.91.160/static/images/exp-bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-bg.jpg);
 }
 /* line 3, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .pagetitle {
   width: 75px;
-  background-image: url(http://45.56.91.160/static/images/exp-list/02titleword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-list/02titleword.png);
 }
 /* line 7, ../../src/static/scss/exp-list.scss */
 #is-landscape .pages.exp-list .car-list-area {
@@ -1071,7 +1071,7 @@ textarea, input, a:link, .btns, p, div {
   font-size: 0;
   margin: 0 auto;
   position: relative;
-  background: url(http://45.56.91.160/static/images/tipbg.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipbg.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
@@ -1084,7 +1084,7 @@ textarea, input, a:link, .btns, p, div {
   top: 0;
   left: 0;
   font-size: 0;
-  background: url(http://45.56.91.160/static/images/tiplight.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tiplight.png);
   -webkit-background-size: contain;
   background-size: contain;
   -webkit-transition: left 1s ease-in-out;
@@ -1095,18 +1095,18 @@ textarea, input, a:link, .btns, p, div {
   width: 180px;
   height: 10px;
   margin: 5px auto 0;
-  background: url(http://45.56.91.160/static/images/exp-list/02tipword.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-list/02tipword.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
 /* line 1, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars {
-  background-image: url(http://45.56.91.160/static/images/exp-bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-bg.jpg);
 }
 /* line 3, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars .pagetitle {
   width: 70px;
-  background-image: url(http://45.56.91.160/static/images/exp-cars/04titleword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-cars/04titleword.png);
 }
 /* line 7, ../../src/static/scss/exp-cars.scss */
 #is-landscape .pages.exp-cars .car-list-area {
@@ -1160,7 +1160,7 @@ textarea, input, a:link, .btns, p, div {
   font-size: 0;
   margin: 10px auto 0;
   position: relative;
-  background: url(http://45.56.91.160/static/images/tipbg.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tipbg.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
@@ -1173,7 +1173,7 @@ textarea, input, a:link, .btns, p, div {
   top: 0;
   left: 0;
   font-size: 0;
-  background: url(http://45.56.91.160/static/images/tiplight.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/tiplight.png);
   -webkit-background-size: contain;
   background-size: contain;
   -webkit-transition: left 1s ease-in-out;
@@ -1184,7 +1184,7 @@ textarea, input, a:link, .btns, p, div {
   width: 115px;
   height: 10px;
   margin: 10px auto 0;
-  background: url(http://45.56.91.160/static/images/exp-cars/04tipword.png);
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-cars/04tipword.png);
   -webkit-background-size: contain;
   background-size: contain;
 }
@@ -1256,12 +1256,12 @@ textarea, input, a:link, .btns, p, div {
 }
 /* line 1, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth {
-  background-image: url(http://45.56.91.160/static/images/exp-bg.jpg);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-bg.jpg);
 }
 /* line 3, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .pagetitle {
   width: 90px;
-  background-image: url(http://45.56.91.160/static/images/exp-booth/03titleword.png);
+  background-image: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-booth/03titleword.png);
 }
 /* line 7, ../../src/static/scss/exp-booth.scss */
 #is-landscape .pages.exp-booth .booth-nav {
@@ -1341,7 +1341,7 @@ textarea, input, a:link, .btns, p, div {
   position: absolute;
   top: -13px;
   left: calc( 50% - 16.5px );
-  background: url(http://45.56.91.160/static/images/exp-booth/hallbutton.png) no-repeat center;
+  background: url(http://192.168.2.103:8099/DZ/dist/static/images/exp-booth/hallbutton.png) no-repeat center;
   background-size: contain;
 }
 /* line 82, ../../src/static/scss/exp-booth.scss */

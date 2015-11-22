@@ -1,0 +1,280 @@
+#is-landscape.kadjar {
+    .pages {
+        .top {
+            .pagetitle {
+                background-image : url( @@path.images/kadjar/carword.png );
+            }
+        }
+        &.tuan {
+            background-image : url( @@path.images/kadjar/03bg.jpg );
+            .title {
+                width : 142.5px;
+                height : 78.5px;
+                background-image : url( @@path.images/kadjar/03title.png );
+                margin : 150px 0 0 45px;
+            }
+            .detail-button-box {
+                margin-top : 0;
+            }
+        }
+        &.tuan3 {
+            .big-pic-layer {
+                position : fixed;
+                top : 0;
+                left : 0;
+                bottom : 0;
+                right : 0;
+                width : 100%;
+                height : 100%;
+                z-index : 200;
+                background-repeat : no-repeat;
+                background-position : center;
+                -webkit-background-size : cover;
+                background-size : cover;
+                display : none;
+                .item {
+                    width : 100%;
+                    height : 100%;
+                    display : none;
+                    padding-top : 0.1px;
+                    background-position : center;
+                    -webkit-background-size : cover;
+                    background-size : cover;
+                    background-repeat : no-repeat;
+                    .center-helper {
+                        width : 100%;
+                        height : 100%;
+                        display : -webkit-box;
+                        display : box;
+
+                        -webkit-box-orient : horizontal;
+                        box-orient : horizontal;
+
+                        -webkit-box-align : center;
+                        box-align : center;
+                    }
+                    .inner {
+                        width : 100%;
+                    }
+                    .txt,
+                    .back-btn,
+                    .img {
+                        display : block;
+                        img {
+                            width : 100%;
+                            height : auto;
+                        }
+                    }
+                    &.item-1 {
+                        background-image :url( @@path.images/kadjar/06-1.jpg );
+                        $width : 1010;
+                        .inner {
+                            margin : 0 auto;
+                            width : percentage( 995 / 1135 );
+                            position : relative;
+                            height : auto;
+                        }
+                        .img {
+                            width : percentage( 667 / $width );
+                            float : right;
+                        }   
+                        .txt {
+                            float : right;
+                            width : percentage( 301 / $width ); 
+                            position : static;
+                            margin-right : percentage( 25 / 995 );
+                        }   
+                        .back-btn {
+                            position : absolute;
+                            bottom : 0;
+                            left : 0;
+                            width : 17.86%;
+                        }
+                    }
+                    &.item-2 {
+                        background-image :url( @@path.images/kadjar/06-2.jpg );
+                        $width : 1020;
+                        .inner {
+                            margin : 0 auto;
+                            width : percentage( $width / 1135 );
+                            position : relative;
+                            padding-top : 0.1px;
+                        }
+                        .img {
+                            width : percentage( 604 / $width );
+                            float : left;
+                        }
+                        .txt {
+                            float : right;
+                            width : percentage( 406 / $width );
+                            margin-top : 20%;
+                        }   
+                        .back-btn {
+                            position : absolute;
+                            top : 0;
+                            right : 0;
+                            width : 17.86%;
+                            margin-top : 0;
+                        }
+                    }
+                    &.item-3 {
+                        background-image :url( @@path.images/kadjar/06-3.jpg );
+                        $width : 930;
+                        .inner {
+                            margin : 0 auto;
+                            width : percentage( $width / 1135 );
+                            position : relative;
+                            padding-top : 0.1px;
+                        }
+                        .img {
+                            width : percentage( 553 / $width );
+                            float : left;
+                        }
+                        .txt {
+                            float : right;
+                            width : percentage( 299 / $width );
+                            margin-top : 20%;
+                            margin-right : percentage( 30 / $width );
+                        }   
+                        .back-btn {
+                            position : absolute;
+                            top : 0;
+                            right : 0;
+                            width : 17.86%;
+                            margin-top : 0;
+                        }
+                    }
+                    &.item-4 {
+                        background-image :url( @@path.images/kadjar/06-4.jpg );
+                        $width : 1020;
+                        .inner {
+                            margin : 0 auto;
+                            width : percentage( $width / 1135 );
+                            position : relative;
+                            height : auto;
+                        }
+                        .img {
+                            width : percentage( 733 / $width );
+                            float : right;
+                        }   
+                        .txt {
+                            float : right;
+                            width : percentage( 262 / $width ); 
+                            position : static;
+                            margin-top : percentage( 20 / 420 );
+                        }   
+                        .back-btn {
+                            position : absolute;
+                            bottom : 0;
+                            left : 0;
+                            width : 17.86%;
+                        }
+
+                    }
+                    &.item-5 {
+                        background-image :url( @@path.images/kadjar/06-5.jpg );
+                        $width : 990;
+                        .inner {
+                             margin : 0 auto;
+                             width : percentage( $width / 1140 ); 
+                             position : relative;
+                         }   
+                         .img {
+                             width : percentage( 582 / $width );
+                             float : left;
+                         }   
+                         .txt {
+                             float : right;
+                             width : percentage( 321 / $width );
+                             margin-top : 5%;
+                         }   
+                         .back-btn {
+                             position : absolute;
+                             right : 0;
+                             bottom : 0;
+                             width : 17.86%;
+                         }
+                    }
+                    &.item-6 {
+                        background-image :url( @@path.images/kadjar/06-6.jpg );
+                        $width : 870;
+                        .inner {
+                             margin : 0 auto;
+                             width : percentage( $width / 1135 );
+                             position : relative;
+                             height : auto;
+                         }   
+                         .img {
+                             width : percentage( 507 / $width );
+                             float : right;
+                         }   
+                         .txt {
+                             width : percentage( 305 / $width  ); 
+                            position : static;
+                             margin-right : percentage( 25 / $width );
+                             margin-top : 5%;
+                         }   
+                         .back-btn {
+                             width : 17.86%;
+                             margin-top : 5%;
+                             position : static;
+                         }
+
+                    }
+                    &.item-7 {
+                        background-image :url( @@path.images/kadjar/06-7.jpg );
+                        $width : 885;
+                        .inner {
+                            margin : 0 auto;
+                            width : percentage( $width / 1135 );
+                            position : relative;
+                            padding-top : 0.1px;
+                        }
+                        .img {
+                            width : percentage( 545 / $width );
+                            float : left;
+                        }
+                        .txt {
+                            float : right;
+                            width : percentage( 323 / $width );
+                            margin-top : 25%;
+                        }   
+                        .back-btn {
+                            position : absolute;
+                            top : 15%;
+                            right : 0;
+                            width : 17.86%;
+                            margin-top : 0;
+                        }
+                    }
+                    &.item-8 {
+                        background-image :url( @@path.images/kadjar/06-8.jpg );
+                        $width : 995;
+                        .inner {
+                             margin : 0 auto;
+                             width : percentage( $width / 1135 );
+                             position : relative;
+                             height : auto;
+                         }   
+                         .img {
+                             width : percentage( 729 / $width );
+                             float : right;
+                         }   
+                         .txt {
+                             float : right;
+                             width : percentage( 215 / $width ); 
+                            position : static;
+                            margin-right : percentage( 25 / $width );
+                         }   
+                         .back-btn {
+                             position : absolute;
+                             bottom : 0;
+                             left : 0;
+                             width : 17.86%;
+                         }
+                    }
+                }
+            }
+        }
+    }
+}

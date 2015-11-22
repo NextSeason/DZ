@@ -28,7 +28,7 @@ textarea, input, a:link, .btns, p, div {
 }
 
 #is-portrait {
-    display : none;
+    display : none!important;
     background : #000;
     height : 100%; 
     width : 100%;
